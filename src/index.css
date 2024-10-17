@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Josefin Sans'
+}
+nav {
+    display: flex;
+    background-color: black;
+    color: white;
+    /* position: fixed; */
+    width: 100%;
+    padding: 2rem;
+}
+
+.items {
+    display: flex;
+    margin-left: auto;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.titulo {
+    margin: 2rem auto;
+}
+
+.item {
+    margin-left: 1rem;
+}
+
+.temp {
+    background-color: red;
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+table {
+    border: 30px solid white;
+    width: 30rem;
+}
+
+.subtitulo {
+    font-size: 2.4rem;
+    margin-left: 4rem;
+
+}
+
+.temp2 {
+    background-color: orange;
+    width: 500px;
+    height: 500px;
+}
+
+.subsection {
+    display: flex;
+    width: 100%;
+    gap: 50%;
+    padding: 0 7rem;
+}
+
+.subsection{
+    background: none;
+}
+
+
+
+
+
+
+
+.section, .section2, .section3, .section4, .section5, .section6, .section7 {
+    display: block;
+    padding: 5rem;
+}
+
+.section, .section5, .section7 {
+    background-color: black;
+}
+
+.section2, .section6 {
+    background-color: blue;
+}
+
+.section3, .section4 {
+    background-color: orange;
+}
