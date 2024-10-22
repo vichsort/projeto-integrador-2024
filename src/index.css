@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
 
 
 body {
@@ -34,11 +34,11 @@ nav {
     margin-left: 1rem;
 }
 
-.temp {
-    background-color: red;
-    width: 900px;
-    height: 900px;
+.mars {
+    width: 1000px;
+    height: 1000px;
     margin: 0 auto;
+    transition: transform 0.3s ease;
 }
 
 table {
@@ -73,7 +73,6 @@ footer {
     display: flex;
     
 }
-
 
 
 
