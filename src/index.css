@@ -69,7 +69,10 @@ table {
     background: none;
 }
 
-
+footer {
+    display: flex;
+    
+}
 
 
 
