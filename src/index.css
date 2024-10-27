@@ -37,6 +37,8 @@ nav {
     margin: 2rem auto;
     width: 753px;
     height: 363px;
+    position: relative; 
+    z-index: 1;
 }
 
 .item {
@@ -47,8 +49,12 @@ nav {
     width: 1000px;
     height: 1000px;
     margin: 0 auto;
-    transition: transform 0.3s ease;
+    margin-top: -18vh;
+    margin-bottom: -20vh;
+    transition: transform 0.0s ease-in-out;
+    z-index: 2;
 }
+
 
 table {
     border: 30px solid white;
@@ -63,7 +69,6 @@ table {
 }
 
 .mars3d {
-    background-color: orange;
     width: 700px;
     height: 700px;
 }
@@ -71,6 +76,7 @@ table {
 .mars3d p {
     display: flex;
     text-align: center;
+    position: absolute;
 }
 
 .subsection {
@@ -155,7 +161,8 @@ footer {
 }
 
 .section2, .section6 {
-    background-color: blue;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(3,8,57,1) 40%, rgba(3,8,57,1) 60%, rgba(0,0,0,1) 100%);
 }
 
 .section3, .section4 {
