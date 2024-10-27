@@ -18,26 +18,26 @@ npm run dev
 - Dentro do src, em components temos os componentes com seus estilos e renderizações próprias (escopadas)
 
 ## Como foi feito:
-(depois eu explico melhor)
+Iremos usar um recurso do vite para criar um projeto básico onde vamos usar o LitElement.
 
 ```bash
 npm create vite@latest ./ -- --template
 ```
 
-escolhido: lit e javascript
+Nesse processo, escolhemos as ferramentas que vamos usar no projeto, usando o Lit e o Javascript. Mas, ainda vamos usar um framework adicional que precisamos instalar: o tailwind. Para isso, basta fazer o seguinte:
 
 ```bash
 npm install -d tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
+Criaremos então um arquivo de configuração com o comando:
 ```bash
 npx tailwindcss init -p
 ```
 
-em tailwind.config.js:
+E em tailwind.config.js alteraremos os conteúdos dentro desse arquivo de configuração para fazer o lookout por arquivos dentro da pasta src:
 
 ```javascript
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     './index.html',
@@ -49,3 +49,5 @@ export default {
   plugins: [],
 }
 ```
+
+Agora, com isso feito, podemos usar qualquer elemento (em react, lit, etc.) para produzir o site com auxilio do tailwindcss.

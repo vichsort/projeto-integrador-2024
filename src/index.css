@@ -23,6 +23,11 @@ nav {
     font-size: larger;
 }
 
+.item a:hover {
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
 .logo {
     width: 60px;
     height: 60px;
@@ -65,7 +70,7 @@ table {
 
 .mars3d p {
     display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .subsection {
@@ -76,6 +81,54 @@ table {
     margin-bottom: 4rem;
 }
 
+.subsection2 {
+    display: flex;
+    justify-content: center;
+    padding: 0 30rem;
+    gap: 10%;
+    margin-bottom: 8rem;
+}
+
+.status {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.6rem;
+    margin-bottom: 3rem;
+}
+
+.small {
+    display: flex;
+}
+
+.num {
+    color: #555b8d;
+    font-size: 6rem;
+    margin-right: 2rem;
+}
+
+.txt {
+    font-size: xx-large;
+    text-align: center;
+} 
+
+.saber {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.btn-foguete {
+    justify-content: center;
+    display: inline-flex;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 2.5rem;
+    transition: 0.3s ease;
+}
+
+.btn-foguete:hover {
+    font-weight: bolder;
+}
 
 
 
@@ -83,6 +136,9 @@ table {
 
 footer {
     display: flex;
+}
+.section {
+    margin-top: -6rem;
 }
 
 .section2 {
@@ -104,4 +160,5 @@ footer {
 
 .section3, .section4 {
     background-color: orange;
+    color: white
 }
