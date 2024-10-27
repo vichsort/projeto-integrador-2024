@@ -24,7 +24,7 @@ npm run dev
 npm create vite@latest ./ -- --template
 ```
 
-escolhido: lit e typescript
+escolhido: lit e javascript
 
 ```bash
 npm install -d tailwindcss@latest postcss@latest autoprefixer@latest

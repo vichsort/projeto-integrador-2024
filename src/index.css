@@ -5,20 +5,22 @@
 
 
 body {
-    font-family: 'Josefin Sans'
+    font-family: 'Josefin Sans';
 }
+
 nav {
     display: flex;
     background-color: black;
     color: white;
-    /* position: fixed; */
     width: 100%;
     padding: 2rem;
+    align-items: center;
 }
 
 .items {
-    display: flex;
+    display: inline-flex;
     margin-left: auto;
+    font-size: larger;
 }
 
 .logo {
@@ -28,6 +30,8 @@ nav {
 
 .titulo {
     margin: 2rem auto;
+    width: 753px;
+    height: 363px;
 }
 
 .item {
@@ -43,39 +47,47 @@ nav {
 
 table {
     border: 30px solid white;
-    width: 30rem;
+    width: 100%;
+    font-size: x-large;
 }
 
 .subtitulo {
-    font-size: 2.4rem;
+    font-size: 3rem;
     margin-left: 4rem;
-
+    margin-bottom: 4rem;
 }
 
-.temp2 {
+.mars3d {
     background-color: orange;
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
+}
+
+.mars3d p {
+    display: flex;
+    justify-content: center;
 }
 
 .subsection {
     display: flex;
     width: 100%;
-    gap: 50%;
-    padding: 0 7rem;
+    gap: 5%;
+    padding: 0 8rem;
+    margin-bottom: 4rem;
 }
 
-.subsection{
-    background: none;
-}
+
+
+
+
 
 footer {
     display: flex;
-    
 }
 
-
-
+.section2 {
+    color: white;
+}
 
 .section, .section2, .section3, .section4, .section5, .section6, .section7 {
     display: block;
