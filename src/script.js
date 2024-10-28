@@ -3,6 +3,6 @@ window.addEventListener('scroll', () => {
     const rotationAngle = scrollPosition / 20; 
     const image = document.querySelector('.mars');
     
-    image.style.transform = `rotate(${Math.min(rotationAngle, 90)}deg)`;
+    image.style.transform = `rotate(${Math.min(rotationAngle, 360)}deg)`;
 });
   
