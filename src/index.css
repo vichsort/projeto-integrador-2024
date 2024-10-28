@@ -8,6 +8,10 @@ body {
     font-family: 'Josefin Sans';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     display: flex;
     background-color: black;
@@ -24,7 +28,7 @@ nav {
 }
 
 .item a:hover {
-    transition: 0.3s ease;
+    transition: 0.1s ease;
     font-weight: bold;
 }
 
@@ -55,12 +59,33 @@ nav {
     z-index: 2;
 }
 
-
-table {
-    border: 30px solid white;
+.info-table {
     width: 100%;
-    font-size: x-large;
-}
+    max-width: 1200px;
+    margin: 50px auto;
+    margin-left: -10%;
+    border-collapse: collapse;
+  }
+  
+  .info-table td {
+    padding: 15px 10px;
+    font-size: 1.2rem;
+  }
+  
+  .label {
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid white;
+  }
+  
+  .value {
+    text-align: right;
+    border-bottom: 1px solid white;
+  }
+  
+  .info-table tr:last-child td {
+    border-bottom: none;
+  }
 
 .subtitulo {
     font-size: 3rem;
@@ -68,14 +93,21 @@ table {
     margin-bottom: 4rem;
 }
 
+.minimars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .mars3d {
     width: 700px;
     height: 700px;
+    display: flex;
 }
 
 .mars3d p {
-    display: flex;
     text-align: center;
+    margin-top: 1rem;
     position: absolute;
 }
 
@@ -100,6 +132,7 @@ table {
     font-size: 2.5rem;
     letter-spacing: 0.6rem;
     margin-bottom: 3rem;
+    margin-top: 20vh;
 }
 
 .small {
@@ -116,6 +149,11 @@ table {
     font-size: xx-large;
     text-align: center;
 } 
+
+.small .txt {
+    width: 40vh;
+    margin-top: 4%;
+}
 
 .saber {
     text-align: center;
@@ -136,13 +174,16 @@ table {
     font-weight: bolder;
 }
 
-
-
-
+.sputnik-img {
+    position: absolute;
+    left: 82%;
+    margin-top: -50vh;
+}
 
 footer {
     display: flex;
 }
+
 .section {
     margin-top: -6rem;
 }
