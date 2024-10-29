@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
 
 <body>
   <nav>
-    <img src="logo.svg" alt="Logo" class="logo">
+    <a href="#landing"><img src="logo.svg" alt="Logo" class="logo"></a>
     <div class="items">
       <div class="item"><a href="#conhecaMarte">Conheça Marte</a></div>
       <div class="item">|</div>
@@ -24,11 +24,15 @@
   </nav>
 
   <!-- Seção 1 - Header-->
-  <div class="section">
+  <div class="section" id="landing">
     <img src="so texto.svg" alt="Logo do site: GeoMars" class="titulo">
 
     <div class="mars">
       <img src="./src/assets/marte home.png" alt="Planeta Marte" class="mars">
+    </div>
+
+    <div class="seta">
+      <img src="/src/assets/seta.svg" alt="" srcset="">
     </div>
   </div>
 
@@ -42,30 +46,30 @@
         <p>Planeta Marte em 3D</p>
       </div>
 
-      <table>
+      <table class="info-table">
         <tr>
-          <td class="1">Área: </td>
-          <td class="2">144.400.000 km<sup>2</sup></td>
+          <td class="label">Área:</td>
+          <td class="value">144.400.000 km<sup>2</sup></td>
         </tr>
         <tr>
-          <td class="1">Força da gravidade: </td>
-          <td class="2">3,71 m/s <sup>2</sup></td>
+          <td class="label">Força da gravidade:</td>
+          <td class="value">3,71 m/s<sup>2</sup></td>
         </tr>
         <tr>
-          <td class="1">Distância da Terra: </td>
-          <td class="2">54.600.000</td>
+          <td class="label">Distância da Terra:</td>
+          <td class="value">54.600.000 km</td>
         </tr>
         <tr>
-          <td class="1">Distância do Sol: </td>
-          <td class="2">227.900.000</td>
+          <td class="label">Distância do Sol:</td>
+          <td class="value">227.900.000 km</td>
         </tr>
         <tr>
-          <td class="1">Período orbital: </td>
-          <td class="2">687 dias</td>
+          <td class="label">Período orbital:</td>
+          <td class="value">687 dias</td>
         </tr>
         <tr>
-          <td class="1">Duração do dia: </td>
-          <td class="2">24h 37m</td>
+          <td class="label">Duração do dia:</td>
+          <td class="value">1d 0h 37m</td>
         </tr>
       </table>
     </div>
@@ -83,12 +87,17 @@
         <p class="txt">ROVERS DA NASA NA SUPERFÍCIE</p>
       </div>
     </div>
+    <div class="sputnik-img">
+      <img src="./src/assets/sputnik-nave.png" alt="Sonda Sputnik ilustrativa">
+    </div>
 
     <h3 class="saber">Quer saber o que está acontecendo por lá?</h3>
-    <button class="btn-foguete">
-      SAIBA MAIS
-      <img src="" alt="Imagem de uma nave">
-    </button>
+    <div class="btn-container">
+      <button class="btn-foguete">
+        SAIBA MAIS
+        <img src="/src/assets/rocket 1.svg" alt="Imagem de uma nave">
+      </button>
+    </div>
   </div>
 
 
