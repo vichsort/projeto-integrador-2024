@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GeoMars</title>
   <link rel="stylesheet" href="./src/index.css" />
-  <script type="module" src="./src/script.js"></script>
+  <script src="./src/script.js"></script>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
@@ -140,7 +140,17 @@
 
 
   <!-- Seção 5 - Carrossel 2-->
-  <!-- <div class="section5"> -->
+  <div class="section5">
+    <div class="container">
+      <button class="prev" onclick="mudarSlide(-1)">❮</button>
+      <div class="carrossel">
+        <div class="slide">Imagem 1</div>
+        <div class="slide">Imagem 2</div>
+        <div class="slide">Imagem 3</div>
+      </div>
+      <button class="next" onclick="mudarSlide(1)">❯</button>
+    </div>
+  </div>
 
 
 
