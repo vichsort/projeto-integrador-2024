@@ -270,6 +270,8 @@ footer {
 
 .section5 {
     box-sizing: border-box;
+    width: 100%;
+    position: relative;
 }
 
 .container {
@@ -283,7 +285,7 @@ footer {
 .carrossel {
     display: flex;
     transition: transform 0.5s ease;
-    margin: 0;
+    position: relative;
 }
 
 .slide {
@@ -292,10 +294,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 0 0 100%;
 }
 
 .slide img {
-    width: 100%;
+    width: 700px;
     height: auto;
 }
 
@@ -309,6 +312,7 @@ footer {
     font-size: 24px;
     cursor: pointer;
     padding: 10px;
+    z-index: 1;
 }
 
 .prev {
