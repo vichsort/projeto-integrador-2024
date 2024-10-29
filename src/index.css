@@ -13,12 +13,16 @@ html {
 
 nav {
     display: flex;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
     color: white;
     width: 100%;
-    padding: 2rem;
-    align-items: center;
     padding: 2rem 8rem;
+    align-items: center;
+    position: fixed;  
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .items {
