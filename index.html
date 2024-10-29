@@ -13,7 +13,7 @@
 
 <body>
   <nav>
-    <img src="logo.svg" alt="Logo" class="logo">
+    <a href="#landing"><img src="logo.svg" alt="Logo" class="logo"></a>
     <div class="items">
       <div class="item"><a href="#conhecaMarte">Conheça Marte</a></div>
       <div class="item">|</div>
@@ -24,11 +24,15 @@
   </nav>
 
   <!-- Seção 1 - Header-->
-  <div class="section">
+  <div class="section" id="landing">
     <img src="so texto.svg" alt="Logo do site: GeoMars" class="titulo">
 
     <div class="mars">
       <img src="./src/assets/marte home.png" alt="Planeta Marte" class="mars">
+    </div>
+
+    <div class="seta">
+      <img src="/src/assets/seta.svg" alt="" srcset="">
     </div>
   </div>
 
@@ -97,10 +101,12 @@
     </div>
 
     <h3 class="saber">Quer saber o que está acontecendo por lá?</h3>
-    <button class="btn-foguete">
-      SAIBA MAIS
-      <img src="/src/assets/rocket 1.svg" alt="Imagem de uma nave">
-    </button>
+    <div class="btn-container">
+      <button class="btn-foguete">
+        SAIBA MAIS
+        <img src="/src/assets/rocket 1.svg" alt="Imagem de uma nave">
+      </button>
+    </div>
   </div>
 
 
