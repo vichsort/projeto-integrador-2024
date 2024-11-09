@@ -1,3 +1,5 @@
+/* Globais ---------------------- */
+
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @tailwind base;
 @tailwind components;
@@ -10,6 +12,8 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* Navbar ---------------------- */
 
 nav {
     display: flex;
@@ -47,6 +51,8 @@ nav {
     height: 63px;
 }
 
+/* Seção 1 - Header ---------------------- */
+
 .titulo {
     margin: 2rem auto;
     width: 753px;
@@ -74,17 +80,18 @@ nav {
     visibility: hidden;
 }
 
+/* Seção 2 - Conheça Marte (tabela, marte 3d) ---------------------- */
+
 .info-table {
     width: 100%;
     max-width: 1200px;
     margin: 50px auto;
-
     border-collapse: collapse;
 }
 
 .info-table td {
     padding: 15px 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .label {
@@ -186,8 +193,8 @@ nav {
 }
 
 .btn-foguete {
-    justify-content: center;
     display: inline-flex;
+    justify-content: center;
     background-color: white;
     color: black;
     font-weight: bold;
@@ -220,10 +227,70 @@ nav {
     position: absolute;
     left: 80%;
     margin-top: -50vh;
-    height: 600px;
-    width: 600px;
+    height: 550px;
+    width: 550px;
     transition: 0.3s ease;
 }
+
+/* Seção 3 - Rovers (curiosity 3d, cards) ---------------------- */
+
+.minicuriosity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.curiosity3d {
+    background-color: black;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.curiosity3d p {
+    text-align: center;
+    margin-top: 1rem;
+    position: absolute;
+}
+
+.cards {
+    padding: 0 30rem;
+    display: flex;
+    width: 100dvw;
+    font-size: 1.5rem;
+    text-align: center;
+    gap: 33%;
+}
+
+.cards h2 {
+    font-weight: bold;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+.section3 button {
+    margin-top: 10rem;
+    padding: 2px;
+    font-size: 1.5rem;
+    background-color: #f25e02;
+    width: 33%;
+    border-radius: 40px;
+    letter-spacing: 0.2rem;
+    transition: 0.2s ease;
+}
+
+.section3 button:hover {
+    /* aqui falta adicionar a cor da borda */
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+}
+
+/* Footer ---------------------- */
 
 footer {
     display: flex;
@@ -232,6 +299,8 @@ footer {
 .footer {
     height: auto;
 }
+
+/* Sectionwise ---------------------- */
 
 .section {
     margin-top: -6rem;
