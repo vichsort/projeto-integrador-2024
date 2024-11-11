@@ -7,6 +7,7 @@
 
 body {
     font-family: "Josefin Sans";
+    background-color: black;
 }
 
 html {
@@ -249,6 +250,10 @@ nav {
     margin-bottom: 20px;
 }
 
+.curiosity3d iframe {
+    width: 700px;
+}
+
 .curiosity3d p {
     text-align: center;
     margin-top: 1rem;
@@ -335,17 +340,13 @@ footer {
 
 .section2,
 .section6 {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(0deg,
-            rgba(2, 0, 36, 1) 0%,
-            rgba(3, 8, 57, 1) 40%,
-            rgba(3, 8, 57, 1) 60%,
-            rgba(0, 0, 0, 1) 100%);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,8,57,1) 52%, rgba(0,0,0,1) 100%);   
 }
 
 .section3,
 .section4 {
-    background-color: orange;
-    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(113,44,2,1) 52%, rgba(0,0,0,1) 100%);
 }
 
