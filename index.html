@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GeoMars</title>
   <link rel="stylesheet" href="./src/index.css" />
-  <script src="./src/script.js"></script>
+  <script type="module" src="./src/script.js"></script>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   
 
@@ -89,9 +89,7 @@
         <p class="txt">ROVERS DA NASA NA SUPERFÍCIE</p>
       </div>
     </div>
-    <div class="sputnik-img">
-      <img src="./src/assets/sputnik-nave.png" alt="Sonda Sputnik ilustrativa">
-    </div>
+    <img src="./src/assets/sputnik-nave.png" alt="Sonda Sputnik ilustrativa" class="sputnik-img">
 
     <h3 class="saber">Quer saber o que está acontecendo por lá?</h3>
     <div class="btn-container">
@@ -106,43 +104,28 @@
 
   <!-- Seção 3 - Rovers -->
   <div class="section3"  id="rovers">
-    <h1 class="subtitulo">Rovers</h1>
+    <h1 class="subtitulo">ROVERS</h1>
 
-    <div class="curiosity3d">
-      <model-viewer 
-        alt="Modelo 3D de Marte" 
-        background-color="blue" 
-        camera-controls 
-        environment-image="neutral" 
-        exposure="1" 
-        shadow-intensity="1" 
-        src="https://mars.nasa.gov/system/resources/gltf_files/24584_Curiosity_static.glb" 
-        style="width: 100%; height: 500px;">
-      </model-viewer>
-
-
+    <div class="minicuriosity">
+      <div class="curiosity3d"></div>
+      <p>Rover curiosity em 3d</p>
     </div>
 
     <div class="cards">
       <div class="card">
-        <div class="card-title">
-          <h2>Curiosity</h2>
-        </div>
-        <div class="card-p">
-          <p>lorem ipsum bla bla bla</p>
-        </div>
+        <h2>Curiosity</h2>
+        <p>lorem ipsum bla bla bla</p>
+      </div>
 
-        <div class="card">
-          <div class="card-title">
-            <h2>Perseverance</h2>
-          </div>
-          <div class="card-p">
-            <p>Lorem ipsum bla bla bla</p>
-          </div>
-        </div>
+      <div class="card">
+        <h2>Perseverance</h2>
+        <p>Lorem ipsum bla bla bla</p>
       </div>
     </div>
-    <button class="orange">Conheça mais</button>
+    <div class="botao">
+      <button><a href="#">Conheça Mais</a></button>
+    </div>
+
   </div>
 
 
@@ -153,33 +136,18 @@
 
 
   <!-- Seção 5 - Carrossel 2-->
-  <div class="section5">
-    <div class="container">
-      <button class="prev" onclick="mudarSlide(-1)">❮</button>
-      <div class="carrossel">
-        <div class="slide">
-          <img src="./src/assets/carrossel-demo0.png" alt="">
-        </div>
-        <div class="slide">
-          <img src="./src/assets/carrossel-demo1.png" alt="">
-        </div>
-        <div class="slide">
-          <img src="./src/assets/carrossel-demo2.png" alt="">
-        </div>
-      </div>
-      <button class="next" onclick="mudarSlide(1)">❯</button>
-    </div>
-  </div>
+    <!-- em teste em https://github.com/vichsort/Carrossel -->
 
 
 
   <!-- Seção 6 - Quiz -->
   <!-- <div class="section6"> -->
-
+    <!-- em teste em https://github.com/vichsort/Quiz -->
 
 
   <!-- Seção 7- Sons de marte-->
   <!-- <div class="section7"> -->
+        <!-- em teste em https://github.com/vichsort/MarsSounds -->
 
 
 
@@ -187,7 +155,7 @@
   <!-- Seção 8 - Footer-->
   <footer>
     <img src="" alt="Rover percorrendo o solo marciano" class="rover-andando">
-    <img src="./src/assets/footer.png" alt="Solo marciano, rodapé" class="footer-img">
+    <img src="./src/assets/footer.png" alt="Solo marciano, rodapé" class="footer">
 
     <div class="newsletter">
       <p>Assine nossa newsletter</p>

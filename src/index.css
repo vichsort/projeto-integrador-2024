@@ -1,3 +1,5 @@
+/* Globais ---------------------- */
+
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @tailwind base;
 @tailwind components;
@@ -11,12 +13,14 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Navbar ---------------------- */
+
 nav {
     display: flex;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
     color: white;
-    width: 100%;
+    width: 100dvw;
     padding: 2rem 8rem;
     align-items: center;
     position: fixed;  
@@ -47,6 +51,8 @@ nav {
     height: 63px;
 }
 
+/* Seção 1 - Header ---------------------- */
+
 .titulo {
     margin: 2rem auto;
     width: 753px;
@@ -74,17 +80,18 @@ nav {
     visibility: hidden;
 }
 
+/* Seção 2 - Conheça Marte (tabela, marte 3d) ---------------------- */
+
 .info-table {
     width: 100%;
     max-width: 1200px;
     margin: 50px auto;
-
     border-collapse: collapse;
 }
 
 .info-table td {
     padding: 15px 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .label {
@@ -186,8 +193,8 @@ nav {
 }
 
 .btn-foguete {
-    justify-content: center;
     display: inline-flex;
+    justify-content: center;
     background-color: white;
     color: black;
     font-weight: bold;
@@ -220,10 +227,70 @@ nav {
     position: absolute;
     left: 80%;
     margin-top: -50vh;
-    height: 600px;
-    width: 600px;
+    height: 550px;
+    width: 550px;
     transition: 0.3s ease;
 }
+
+/* Seção 3 - Rovers (curiosity 3d, cards) ---------------------- */
+
+.minicuriosity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.curiosity3d {
+    background-color: black;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.curiosity3d p {
+    text-align: center;
+    margin-top: 1rem;
+    position: absolute;
+}
+
+.cards {
+    padding: 0 30rem;
+    display: flex;
+    width: 100dvw;
+    font-size: 1.5rem;
+    text-align: center;
+    gap: 33%;
+}
+
+.cards h2 {
+    font-weight: bold;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+.section3 button {
+    margin-top: 10rem;
+    padding: 2px;
+    font-size: 1.5rem;
+    background-color: #f25e02;
+    width: 33%;
+    border-radius: 40px;
+    letter-spacing: 0.2rem;
+    transition: 0.2s ease;
+}
+
+.section3 button:hover {
+    /* aqui falta adicionar a cor da borda */
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+}
+
+/* Footer ---------------------- */
 
 .curiosity3d {
     display: flex;
@@ -232,6 +299,12 @@ nav {
 footer {
     display: flex;
 }
+
+.footer {
+    height: auto;
+}
+
+/* Sectionwise ---------------------- */
 
 .section {
     margin-top: -6rem;
@@ -274,60 +347,5 @@ footer {
 .section4 {
     background-color: orange;
     color: white;
-}
-
-.section5 {
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-}
-
-.container {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
-    overflow: hidden;
-}
-
-.carrossel {
-    display: flex;
-    transition: transform 0.5s ease;
-    position: relative;
-}
-
-.slide {
-    min-width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 100%;
-}
-
-.slide img {
-    width: 700px;
-    height: auto;
-}
-
-.section5 button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
 }
 
