@@ -225,6 +225,10 @@ nav {
     transition: 0.3s ease;
 }
 
+.curiosity3d {
+    display: flex;
+}
+
 footer {
     display: flex;
 }
@@ -326,3 +330,4 @@ footer {
 .next {
     right: 10px;
 }
+
