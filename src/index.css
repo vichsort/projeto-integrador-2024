@@ -264,7 +264,7 @@ nav {
 .cards {
     padding: 0 30rem;
     display: flex;
-    width: 200dvw;
+    width: 100dvw;
     font-size: 1.5rem;
     text-align: center;
     gap: 33%;
