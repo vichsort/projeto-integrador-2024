@@ -317,9 +317,13 @@ nav {
     padding: 20px;
 }
 
-.planeta-timeline {
-    height: 700px;
-    margin-right: 0;
+.timeline-img {
+    position: absolute;
+    left: 80%;
+    margin-top: -50vh;
+    height: 550px;
+    width: 550px;
+    transition: 0.3s ease;
 }
 /* Footer ---------------------- */
 
@@ -328,7 +332,6 @@ footer {
     height: 100dvh;
     background-image: url(./assets/footer.png);
     object-fit: cover;
-    
 }
 
 .rover-andando, 
