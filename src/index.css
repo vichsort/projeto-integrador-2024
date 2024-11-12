@@ -295,19 +295,38 @@ nav {
     font-weight: bold;
 }
 
-/* Footer ---------------------- */
-
 .curiosity3d {
     display: flex;
 }
 
+/* Footer ---------------------- */
+
 footer {
     display: flex;
+    height: 100dvh;
+    background-image: url(./assets/footer.png);
+    object-fit: cover;
 }
 
-.footer {
-    height: auto;
+.rover-andando, 
+.newsletter, 
+.ifc, 
+.wraper, 
+.adderalls {
+    position: relative;
+    color: white;
+    z-index: 5;
 }
+
+.rover-andando {
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    transition: transform 0s ease-in-out;
+}
+
+
+
 
 /* Sectionwise ---------------------- */
 
@@ -348,5 +367,6 @@ footer {
 .section4 {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(113,44,2,1) 52%, rgba(0,0,0,1) 100%);
+    color: white;
 }
 
