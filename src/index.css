@@ -308,6 +308,19 @@ nav {
     display: flex;
 }
 
+/* Seção 4 - Exploracoes */
+
+.section4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.planeta-timeline {
+    height: 700px;
+    margin-right: 0;
+}
 /* Footer ---------------------- */
 
 footer {
@@ -315,6 +328,7 @@ footer {
     height: 100dvh;
     background-image: url(./assets/footer.png);
     object-fit: cover;
+    
 }
 
 .rover-andando, 
