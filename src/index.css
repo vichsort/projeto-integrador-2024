@@ -245,14 +245,13 @@ nav {
 }
 
 .curiosity3d {
-    background-color: black;
     width: 700px;
     height: 400px;
     display: flex;
     margin-bottom: 20px;
 }
 
-.curiosity3d iframe {
+.curiosity3d model-viewer {
     width: 700px;
 }
 
@@ -313,9 +312,10 @@ nav {
     /* aqui falta adicionar a cor da borda */
     padding: 1rem 6rem;
     padding-bottom: 0.5%;
-    box-shadow: 0px 0px 108px 6px rgba(255, 255, 255, 0.33);
-    -webkit-box-shadow: 0px 0px 108px 6px rgba(255, 255, 255, 0.33);
-    -moz-box-shadow: 0px 0px 108px 6px rgba(255, 255, 255, 0.33);
+    box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
+    -webkit-box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
+    -moz-box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
+    outline: white solid 5px;
 }
 
 .curiosity3d {
