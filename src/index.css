@@ -303,7 +303,7 @@ nav {
     border-radius: 40px;
     letter-spacing: 0.05rem;
     transition: 0.3s ease;
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
     text-decoration: none;
     padding-bottom: 0.5%;
 }
@@ -311,11 +311,13 @@ nav {
 .section3 button:hover {
     /* aqui falta adicionar a cor da borda */
     padding: 1rem 6rem;
+    border-radius: 50px 50px 5px 50px;
     padding-bottom: 0.5%;
     box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
     -webkit-box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
     -moz-box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
-    outline: white solid 5px;
+
+
 }
 
 .curiosity3d {
