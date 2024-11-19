@@ -158,10 +158,22 @@
 
 
   <!-- Seção 7- Sons de marte-->
-  <!-- <div class="section7"> -->
-        <!-- em teste em https://github.com/vichsort/MarsSounds -->
+  <div class="section7">
 
+    <div class="titulo7">
+      <h1 class="sons-title">Sons de Marte</h1>
+      <h1 class="line"></h1>
+    </div>
 
+    <div class="audio-player">
+      <button class="play-button" onclick="togglePlay()"><img src="./src/assets/play-btn.png" alt="" srcset=""></button>
+      <input type="range" class="progress-bar" value="0" max="100" onchange="seekAudio(event)">
+      <span class="time">00:00</span>
+    </div>
+    
+    <audio id="audio" src=""></audio>
+    
+  </div>
 
 
   <!-- Seção 8 - Footer -->
