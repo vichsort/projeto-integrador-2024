@@ -525,6 +525,8 @@ footer {
 }
   
 .rover-andando {
+    position: relative;
+    top: 2rem;
     width: 400px;
     animation: andando 10s linear infinite alternate;
     height: 400px;
@@ -536,7 +538,7 @@ footer {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(100vw - 150px));
+      transform: translateX(calc(50vw - 150px));
     }
 }
   
