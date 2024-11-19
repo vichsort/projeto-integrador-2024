@@ -6,6 +6,7 @@ window.addEventListener("scroll", () => {
   image.style.transform = `rotate(${Math.min(rotationAngle, 360)}deg)`;
 });
 
+
 // Player - Seção 7
 
 const audio = document.getElementById('audio');
@@ -36,5 +37,5 @@ progressBar.addEventListener('input', () => {
 function updateDisplayTime() {
   const minutes = Math.floor(audio.currentTime / 60);
   const seconds = Math.floor(audio.currentTime % 60);
-  timeDisplay.textContent = ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')};
+  timeDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 }
