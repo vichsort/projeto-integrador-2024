@@ -44,7 +44,12 @@
     <h2 class="subtitulo">CONHEÇA MARTE</h2>
     <div class="subsection">
       <div class="minimars">
-        <model-viewer src="./src/assets/mars-model.glb" alt="Modelo 3D de Marte" auto-rotate auto-rotate-speed="10" ar class="mars3d"></model-viewer>
+        <model-viewer src="./src/assets/mars-model.glb"
+          alt="Modelo 3D de Marte" 
+          auto-rotate
+          camera-controls
+          class="mars3d">
+        </model-viewer>
         <p>Planeta Marte em 3D</p>
       </div>
 
@@ -107,11 +112,13 @@
 
     <div class="minicuriosity">
       <div class="curiosity3d">
-        <model-viewer src="./src/assets/curiosity-model.glb" alt="Modelo 3D do Curiosity"
-              ar auto-rotate camera-controls
-              camera-orbit="40deg 75deg 1.2m"
-              camera-target="0m 0.75m 0m"
-              style="width: 100%; height: 400px; background-color: transparent;">
+        <model-viewer src="./src/assets/curiosity-model.glb" 
+            alt="Modelo 3D do Curiosity"
+            auto-rotate 
+            camera-controls
+            camera-orbit="40deg 75deg 1.2m"
+            camera-target="0m 0.75m 0m"
+            style="width: 100%; height: 400px; background-color: transparent;">
         </model-viewer>
 
       </div>
