@@ -509,10 +509,6 @@ nav {
     margin-bottom: 40px;
 }
 
-.titulo7 {
-
-}
-
 /* Footer ---------------------- */
 
 footer {
@@ -520,7 +516,7 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-image: url(./assets/footerbg.png);
+    background-image: url(./assets/footerbg.jpeg);
     background-size: cover;
     height: auto;
     color: white;
@@ -664,3 +660,4 @@ footer {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(113,44,2,1) 52%, rgba(0,0,0,1) 100%);
     color: white;
 }
+
