@@ -521,7 +521,7 @@ footer {
     height: auto;
     color: white;
     position: relative;
-
+    margin: 0
 }
   
 .rover-andando {
@@ -558,10 +558,10 @@ footer {
   
 .newsletter input {
     padding: 5px;
-    padding-left: 10px;
+    padding-left: 15px;
     padding-right: 50px;
     border: none;
-    border-radius: 10px;
+    border-radius: 16px;
     background-color: rgba(0, 0, 0, 0.523);
     outline: #ff5b2e41 solid 1px;
     font-size: 1.8rem;
