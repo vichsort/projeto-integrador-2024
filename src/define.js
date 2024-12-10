@@ -1,0 +1,1 @@
+window.customElements.define('app-nav', appNav);
