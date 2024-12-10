@@ -339,7 +339,7 @@ nav {
     transition: 0.3s ease;
 }
 
-/* Seção 5 - Carrossel ---------------------- */
+/* Seção 5 - Carrossel ----------------------
 
 .out-container {
     padding: 40px;
@@ -442,15 +442,9 @@ nav {
     right: 0;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
-
+ */
 
 /* Seção 7 - Sons de Marte */
-
-.section7 {
-    text-align: center;
-}
-
-
 .audio-player {
     display: flex;
     align-items: center;
@@ -519,14 +513,18 @@ footer {
     position: relative;
     margin: 0
 }
+
+.rover-andando-container {
+    display: block;
+    width: 100%;
+    bottom: 40rem;
+}
   
 .rover-andando {
     position: relative;
-    top: 2rem;
     width: 400px;
     animation: andando 10s linear infinite alternate;
     height: 400px;
-    margin-bottom: -200px;
 }
   
 @keyframes andando {
@@ -534,7 +532,7 @@ footer {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(50vw - 150px));
+      transform: translateX(calc(400% - 150px));
     }
 }
   
@@ -659,3 +657,6 @@ footer {
     color: white;
 }
 
+.section7 {
+    text-align: center;
+}
