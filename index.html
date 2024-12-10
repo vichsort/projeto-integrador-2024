@@ -1,249 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoMars</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="./src/script.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GeoMars</title>
-  <link rel="stylesheet" href="./src/index.css" />
-  <script type="module" src="./src/script.js"></script>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-</head>
+  <body>
+    <nav>
+      <a href="#landing"><img src="logo.svg" alt="Logo" class="logo" /></a>
+      <div class="items">
+        <div class="item"><a href="#conhecaMarte">Conheça Marte</a></div>
+        <div class="item">|</div>
+        <div class="item"><a href="#rovers">Rovers</a></div>
+        <div class="item">|</div>
+        <div class="item"><a href="#exploracoes">Explorações Espaciais</a></div>
+      </div>
+    </nav>
 
-<body>
-  <nav>
-    <a href="#landing"><img src="logo.svg" alt="Logo" class="logo"></a>
-    <div class="items">
-      <div class="item"><a href="#conhecaMarte">Conheça Marte</a></div>
-      <div class="item">|</div>
-      <div class="item"><a href="#rovers">Rovers</a></div>
-      <div class="item">|</div>
-      <div class="item"><a href="#exploracoes">Explorações Espaciais</a></div>
-    </div>
-  </nav>
+    <!-- Seção 1 - Header-->
+    <div class="section" id="landing">
+      <img src="so texto.svg" alt="Logo do site: GeoMars" class="titulo" />
 
-  <!-- Seção 1 - Header-->
-  <div class="section" id="landing">
-    <img src="so texto.svg" alt="Logo do site: GeoMars" class="titulo">
-
-    <div class="mars">
-      <img src="./src/assets/marte home.png" alt="Planeta Marte" class="mars">
-    </div>
-
-    <div class="seta">
-      <img src="/src/assets/seta.svg" alt="" srcset="">
-    </div>
-  </div>
-
-
-  <!-- Seção 2 - Fundo azul -->
-  <div class="section2" id="conhecaMarte">
-    <h2 class="subtitulo">CONHEÇA MARTE</h2>
-    <div class="subsection">
-      <div class="minimars">
-        <model-viewer src="./src/assets/mars-model.glb"
-          alt="Modelo 3D de Marte" 
-          auto-rotate
-          camera-controls
-          class="mars3d">
-        </model-viewer>
-        <p>Planeta Marte em 3D</p>
+      <div class="mars">
+        <img
+          src="./src/assets/marte home.png"
+          alt="Planeta Marte"
+          class="mars"
+        />
       </div>
 
-      <table class="info-table">
-        <tr>
-          <td class="label">Área:</td>
-          <td class="value">144.400.000 km<sup>2</sup></td>
-        </tr>
-        <tr>
-          <td class="label">Força da gravidade:</td>
-          <td class="value">3,71 m/s<sup>2</sup></td>
-        </tr>
-        <tr>
-          <td class="label">Distância da Terra:</td>
-          <td class="value">54.600.000 km</td>
-        </tr>
-        <tr>
-          <td class="label">Distância do Sol:</td>
-          <td class="value">227.900.000 km</td>
-        </tr>
-        <tr>
-          <td class="label">Período orbital:</td>
-          <td class="value">687 dias</td>
-        </tr>
-        <tr>
-          <td class="label">Duração do dia:</td>
-          <td class="value">1d 0h 37m</td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="status">
-      <h2>Status das missões</h2>
-    </div>
-    <div class="subsection2">
-      <div class="small">
-        <h3 class="num">03</h3>
-        <p class="txt">NAVES DA NASA EM ÓRBITA</p>
-      </div>
-      <div class="small">
-        <h3 class="num">02</h3>
-        <p class="txt">ROVERS DA NASA NA SUPERFÍCIE</p>
+      <div class="seta">
+        <img src="/src/assets/seta.svg" alt="" srcset="" />
       </div>
     </div>
-    <img src="./src/assets/sputnik-nave.png" alt="Sonda Sputnik ilustrativa" class="sputnik-img">
 
-    <h3 class="saber">Quer saber o que está acontecendo por lá?</h3>
-    <div class="btn-container">
-      <button class="btn-foguete">
-        SAIBA MAIS
-        <img src="/src/assets/rocket 1.svg" alt="Imagem de uma nave">
-      </button>
+    <!-- Seção 2 - Fundo azul -->
+    <div class="section2" id="conhecaMarte">
+      <h2 class="subtitulo">CONHEÇA MARTE</h2>
+      <div class="subsection">
+        <div class="minimars">
+          <model-viewer
+            src="./src/assets/mars-model.glb"
+            alt="Modelo 3D de Marte"
+            auto-rotate
+            camera-controls
+            class="mars3d"
+          >
+          </model-viewer>
+          <p>Planeta Marte em 3D</p>
+        </div>
+
+        <table class="info-table">
+          <tr>
+            <td class="label">Área:</td>
+            <td class="value">144.400.000 km<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td class="label">Força da gravidade:</td>
+            <td class="value">3,71 m/s<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td class="label">Distância da Terra:</td>
+            <td class="value">54.600.000 km</td>
+          </tr>
+          <tr>
+            <td class="label">Distância do Sol:</td>
+            <td class="value">227.900.000 km</td>
+          </tr>
+          <tr>
+            <td class="label">Período orbital:</td>
+            <td class="value">687 dias</td>
+          </tr>
+          <tr>
+            <td class="label">Duração do dia:</td>
+            <td class="value">1d 0h 37m</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="status">
+        <h2>Status das missões</h2>
+      </div>
+      <div class="subsection2">
+        <div class="small">
+          <h3 class="num">03</h3>
+          <p class="txt">NAVES DA NASA EM ÓRBITA</p>
+        </div>
+        <div class="small">
+          <h3 class="num">02</h3>
+          <p class="txt">ROVERS DA NASA NA SUPERFÍCIE</p>
+        </div>
+      </div>
+      <img
+        src="./src/assets/sputnik-nave.png"
+        alt="Sonda Sputnik ilustrativa"
+        class="sputnik-img"
+      />
+
+      <h3 class="saber">Quer saber o que está acontecendo por lá?</h3>
+      <div class="foguete-btn-container">
+        <button class="foguete-btn">
+          SAIBA MAIS
+          <img src="/src/assets/rocket 1.svg" alt="Imagem de uma nave" />
+        </button>
+      </div>
     </div>
-  </div>
 
+    <!-- Seção 3 - Rovers -->
+    <div class="section3" id="rovers">
+      <h1 class="subtitulo">ROVERS</h1>
 
-  <!-- Seção 3 - Rovers -->
-  <div class="section3" id="rovers">
-    <h1 class="subtitulo">ROVERS</h1>
-
-    <div class="minicuriosity">
-      <div class="curiosity3d">
-        <model-viewer src="./src/assets/curiosity-model.glb" 
+      <div class="minicuriosity">
+        <div class="curiosity3d">
+          <model-viewer
+            src="./src/assets/curiosity-model.glb"
             alt="Modelo 3D do Curiosity"
-            auto-rotate 
+            auto-rotate
             camera-controls
             camera-orbit="40deg 75deg 1.2m"
             camera-target="0m 0.75m 0m"
-            style="width: 100%; height: 400px; background-color: transparent;">
-        </model-viewer>
-
-      </div>
-      <p>Rover curiosity em 3D</p>
-    </div>
-
-    <div class="cards">
-      <div class="card">
-        <h2>Curiosity</h2>
-        <p>O <b>Curiosity Rover</b> foi lançado em 2011 pela NASA, tem como seu principal papel explorar a superficíe marciana, estudar seu clima, sua estrutura, sua geologia, e se o planeta teria a possibilidadede ser habitado por seres humanos. É equipado por instrumentos tecnológicos avançados, como sensores, câmeras de alta resolução e braços robóticos, o Curiosity fez diversas descobertas significativas, como a identificação de rochas e do solo, variações no clima local e a detecção de moléculas orgãnicas. </p>
-      </div>
-
-      <div class="card">
-        <h2>Perseverance</h2>
-        <p>O <b>Perseverance</b> foi lançado em 2020 pela NASA, tem como seu principal objetivo avançar os conhecimentos sobre o planeta vermelho, utilizando equipamentos tecnológicos, como o SuperCam, que analisa a composição química das rochas, e o MOXIE, que tenta gerar oxigênio a partir do dióxido de carbono da atmosfera de Marte, uma tecnologia crucial para missões humanas futuras. O Perseverance coleta amostras de Marte, que serão enviados para a Terra. </p>
-      </div>
-    </div>
-    <div class="botao">
-      <button><a href="#">Conheça Mais</a></button>
-    </div>
-
-  </div>
-
-
-
-  <!-- Seção 4 - Carrossel 1 explorações-->
-  <div class="section4" id="exploracoes">
-    
-    <h2 class="subtitulo">EXPLORAÇÕES ESPACIAIS</h2>
-    <img src="./src/assets/planeta-timeline.png" alt="Planeta Marte" class="timeline-img">
-  
-  </div>
-
-
-
-  <!-- Seção 5 - Carrossel 2-->
-  <div class="section5">
-    <div class="out-container">
-      <div class="carrossel-container">
-        <!-- <button class="prev">&#60</button> -->
-        <div class="carrossel">
-          <div class="carrossel-item">
-            <img src="./src/assets/carrossel-demo0.png" alt="primeira imagem">
-            <div class="carrossel-desc">
-              <h3>Lorem ipsum</h3>
-              <p>Lorem ipsum</p>
-            </div>
-          </div>
-
-          <div class="carrossel-item.active">
-            <img src="./src/assets/carrossel-demo1.png" alt="primeira imagem">
-            <div class="carrossel-desc">
-              <h3>Lorem ipsum</h3>
-              <p>Lorem ipsum</p>
-            </div>
-          </div>
-
-          <div class="carrossel-item">
-            <img src="./src/assets/carrossel-demo0.png" alt="primeira imagem">
-            <div class="carrossel-desc">
-              <h3>Lorem ipsum</h3>
-              <p>Lorem ipsum</p>
-            </div>
+            style="width: 100%; height: 400px; background-color: transparent"
+          >
+          </model-viewer>
         </div>
-        <!-- <button class="next">&#62</button> -->
+        <p>Rover curiosity em 3D</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h2>Curiosity</h2>
+          <p>
+            O <b>Curiosity Rover</b> foi lançado em 2011 pela NASA, tem como seu
+            principal papel explorar a superficíe marciana, estudar seu clima,
+            sua estrutura, sua geologia, e se o planeta teria a possibilidadede
+            ser habitado por seres humanos. É equipado por instrumentos
+            tecnológicos avançados, como sensores, câmeras de alta resolução e
+            braços robóticos, o Curiosity fez diversas descobertas
+            significativas, como a identificação de rochas e do solo, variações
+            no clima local e a detecção de moléculas orgãnicas.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Perseverance</h2>
+          <p>
+            O <b>Perseverance</b> foi lançado em 2020 pela NASA, tem como seu
+            principal objetivo avançar os conhecimentos sobre o planeta
+            vermelho, utilizando equipamentos tecnológicos, como o SuperCam, que
+            analisa a composição química das rochas, e o MOXIE, que tenta gerar
+            oxigênio a partir do dióxido de carbono da atmosfera de Marte, uma
+            tecnologia crucial para missões humanas futuras. O Perseverance
+            coleta amostras de Marte, que serão enviados para a Terra.
+          </p>
+        </div>
+      </div>
+      <div class="card-btn-container">
+        <button class="card-btn">CONHEÇA MAIS</button>
       </div>
     </div>
-  </div>
-</div>
 
+    <!-- Seção 4 - Carrossel 1 explorações-->
+    <div class="section4" id="exploracoes">
+      <h2 class="subtitulo">EXPLORAÇÕES ESPACIAIS</h2>
+      <img
+        src="./src/assets/planeta-timeline.png"
+        alt="Planeta Marte"
+        class="timeline-img"
+      />
+    </div>
 
+    <!-- Seção 5 - Carrossel 2-->
+    <!-- <div class="section5">
+      <div class="out-container">
+        <div class="carrossel-container">
+          <button class="prev">&#60</button> 
+          <div class="carrossel">
+            <div class="carrossel-item">
+              <img
+                src="./src/assets/carrossel-demo0.png"
+                alt="primeira imagem"
+              />
+              <div class="carrossel-desc">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum</p>
+              </div>
+            </div>
 
-  <!-- Seção 6 - Quiz -->
-  <!-- <div class="section6"> -->
+            <div class="carrossel-item.active">
+              <img
+                src="./src/assets/carrossel-demo1.png"
+                alt="primeira imagem"
+              />
+              <div class="carrossel-desc">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum</p>
+              </div>
+            </div>
+
+            <div class="carrossel-item">
+              <img
+                src="./src/assets/carrossel-demo0.png"
+                alt="primeira imagem"
+              />
+              <div class="carrossel-desc">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum</p>
+              </div>
+            </div>
+            <button class="next">&#62</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Seção 6 - Quiz -->
+    <!-- <div class="section6"> -->
     <!-- em teste em https://github.com/vichsort/Quiz -->
 
-
-  <!-- Seção 7- Sons de marte-->
-  <div class="section7">
-
-    <div class="titulo7">
-      <h1 class="sons-title">Sons de Marte</h1>
-      <h1 class="line"></h1>
-    </div>
-
-    <div class="audio-player">
-      <button class="play-button" onclick="togglePlay()"><img src="./src/assets/play-btn.png" alt="" srcset=""></button>
-      <input type="range" class="progress-bar" value="0" max="100" onchange="seekAudio(event)">
-      <span class="time">00:00</span>
-    </div>
-    
-    <audio id="audio" src=""></audio>
-    
-  </div>
-
-
-  <!-- Seção 8 - Footer -->
-  <footer>
-    <img src="./src/assets/moving-rover.png" alt="Rover percorrendo o solo marciano" class="rover-andando">
-  
-    <div class="newsletter">
-      <p>Assine nossa Newsletter</p>
-      <input placeholder="E-mail" type="email">
-      <button>Assinar</button>
-    </div>
-  
-    <div class="wraper">
-
-      <img src="./src/assets/logo-ifc.png" alt="Logo do IFC Campus Concórdia" class="ifc">
-
-      <div class="card-f">
-        <div class="title"><a href="#">Conheça Marte</a></div>
-        <p>Status das Missões<br>Mais Informações</p>
+    <!-- Seção 7- Sons de marte-->
+    <div class="section7">
+      <div class="titulo7">
+        <h1 class="sons-title">Sons de Marte</h1>
+        <h1 class="line"></h1>
       </div>
-      <div class="card-f">
-        <div class="title"><a href="#">Rovers</a></div>
-        <p>Modelo interativo<br>Curiosity e Perseverance</p>
-      </div>
-      <div class="card-f">
-        <div class="title"><a href="#">Explorações Espaciais</a></div>
-        <p>Linha do tempo<br>Galeria de fotos<br>Sons de Marte</p>
-      </div>
-    </div>
-  
-    <p class="adderalls">GeoMars© - IFC Campus Concórdia</p>
-  </footer>
-  
-</body>
 
-</html> 
+      <div class="audio-player">
+        <button class="play-button" onclick="togglePlay()">
+          <img src="./src/assets/play-btn.png" alt="" srcset="" />
+        </button>
+        <input
+          type="range"
+          class="progress-bar"
+          value="0"
+          max="100"
+          onchange="seekAudio(event)"
+        />
+        <span class="time">00:00</span>
+      </div>
+
+      <audio id="audio" src=""></audio>
+    </div>
+
+    <!-- Seção 8 - Footer -->
+    <footer>
+      <div class="rover-andando-container">
+        <img
+          src="./src/assets/moving-rover.png"
+          alt="Rover percorrendo o solo marciano"
+          class="rover-andando"
+        />
+      </div>
+
+      <div class="newsletter">
+        <p>Assine nossa Newsletter</p>
+        <input placeholder="E-mail" type="email" />
+        <button>Assinar</button>
+      </div>
+
+      <div class="wraper">
+        <img
+          src="./src/assets/logo-ifc.png"
+          alt="Logo do IFC Campus Concórdia"
+          class="ifc"
+        />
+
+        <div class="card-f">
+          <div class="title"><a href="#">Conheça Marte</a></div>
+          <p>Status das Missões<br />Mais Informações</p>
+        </div>
+        <div class="card-f">
+          <div class="title"><a href="#">Rovers</a></div>
+          <p>Modelo interativo<br />Curiosity e Perseverance</p>
+        </div>
+        <div class="card-f">
+          <div class="title"><a href="#">Explorações Espaciais</a></div>
+          <p>Linha do tempo<br />Galeria de fotos<br />Sons de Marte</p>
+        </div>
+      </div>
+
+      <p class="adderalls">GeoMars© - IFC Campus Concórdia</p>
+    </footer>
+  </body>
+</html>
+ 
