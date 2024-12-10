@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina2 pra testar</title>
+    <title>Notícias | GeoMars</title>
+    <link rel="stylesheet" href="/src/second.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body>
+    <nav>
+        <a href="#landing"><img src="logo.svg" alt="Logo" class="logo"></a>
+        <div class="items">
+          <div class="item"><a href="index.html"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Retornar ao início</a></div>
+          <div class="item">|</div>
+        </div>
+    </nav>
     
+    <div class="header">
+
+        <img src="src/assets/news-bg.png" alt="" class="h-bg">
+        <h1 class="titulo">ÚLTIMAS NOTÍCIAS</h1>
+        <a href="#exploracoes-news"><img src="src/assets/seta.svg" alt="" srcset="" class="seta"></a>
+
+        <div class="exploracoes-news" id="exploracoes-news">
+            <h1 class="subtitulo">Explorações espaciais</h1>
+        </div>
+    </div>
+
+    <footer>
+        <img src="./src/assets/moving-rover.png" alt="Rover percorrendo o solo marciano" class="rover-andando">
+      
+        <div class="newsletter">
+          <p>Assine nossa Newsletter</p>
+          <input placeholder="E-mail" type="email">
+          <button>Assinar</button>
+        </div>
+      
+        <div class="wraper">
+    
+          <img src="./src/assets/logo-ifc.png" alt="Logo do IFC Campus Concórdia" class="ifc">
+    
+          <div class="card-f">
+            <div class="title"><a href="index.html">Conheça Marte</a></div>
+            <p>Status das Missões<br>Mais Informações</p>
+          </div>
+          <div class="card-f">
+            <div class="title"><a href="index.html">Rovers</a></div>
+            <p>Modelo interativo<br>Curiosity e Perseverance</p>
+          </div>
+          <div class="card-f">
+            <div class="title"><a href="index.html">Explorações Espaciais</a></div>
+            <p>Linha do tempo<br>Galeria de fotos<br>Sons de Marte</p>
+          </div>
+        </div>
+      
+        <p class="adderalls">GeoMars© - IFC Campus Concórdia</p>
+    </footer>
 </body>
 </html>
