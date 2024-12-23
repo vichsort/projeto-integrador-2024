@@ -81,8 +81,25 @@ nav {
     z-index: 2;
 }
 
+@keyframes sobeDesce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+}
+
 .seta {
     visibility: hidden;
+    color: white;
+    margin: 2rem auto;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    top: -300px;
+    height: 5rem;
+    animation: sobeDesce 3s ease infinite;
 }
 
 /* Seção 2 - Conheça Marte (tabela, marte 3d) ---------------------- */
