@@ -91,31 +91,22 @@ nav {
 }
 
 .h-bg {
-    height: 600px;
+    height: 650px;
     width: 100%;
 }
 
 /* Noticia exploracao ------------------- */
 
-.exploracoes-news {
+.anatomia {
     margin-top: -18%;
-    margin-left: 6%;
 }
 
 .subtitulo {
+    display: flex;
     font-size: 3rem;
-    margin-left: 4rem;
     margin-bottom: 4rem;
     color: white;
-}
-
-/* Noticia component ------------------- */
-
-news-item {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin: 4rem 10rem;
 }
 
 /* Footer ---------------------- */
