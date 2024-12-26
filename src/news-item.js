@@ -8,6 +8,7 @@ class NewsItem extends LitElement {
     image: { type: String },
     tag: { type: String },
     timeAgo: { type: String },
+    url: { type: String }, 
   };
 
   static styles = css`
@@ -22,7 +23,14 @@ class NewsItem extends LitElement {
     .container {
       display: flex;
       flex-direction: row;
-    
+      cursor: pointer;
+      padding: 1rem;
+      transition: background 0.3s;
+      border-radius: 20px;
+    }
+
+    .container:hover {
+      background: #1a1a1a;
     }
 
     .image {
@@ -35,7 +43,7 @@ class NewsItem extends LitElement {
     }
 
     .content {
-      padding: 16px;
+      padding-left: 16px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -69,9 +77,13 @@ class NewsItem extends LitElement {
     }
   `;
 
+  handleClick() {
+    window.open(this.url, '_blank'); 
+  }
+
   render() {
     return html`
-      <div class="container">
+      <div class="container" @click="${this.handleClick}">
         <img class="image" src="${this.image}" alt="${this.title}" />
         <div class="content">
           <div>
