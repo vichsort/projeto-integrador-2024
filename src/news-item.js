@@ -22,12 +22,16 @@ class NewsItem extends LitElement {
     .container {
       display: flex;
       flex-direction: row;
+    
     }
 
     .image {
       width: 40%;
       object-fit: cover;
       border-radius: 25px;
+      max-width: 600px;
+      max-height: 350px;
+      min-width: 500px;
     }
 
     .content {
@@ -52,7 +56,7 @@ class NewsItem extends LitElement {
     }
 
     .description {
-      font-size: 1.3em;
+      font-size: 1.2em;
       line-height: 1.5;
       margin: 0 0 16px;
       color: #ccc;
@@ -75,7 +79,7 @@ class NewsItem extends LitElement {
             <div class="title">${this.title}</div>
             <div class="description">${this.description}</div>
           </div>
-          <div class="date">há ${this.timeAgo} dias</div>
+          <div class="date">${this.date}</div>
         </div>
       </div>
     `;
