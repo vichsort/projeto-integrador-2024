@@ -7,6 +7,7 @@
     <title>Notícias | GeoMars</title>
     <link rel="stylesheet" href="/src/rovers.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script type="module" src="./rover-card.js"></script>
 
 </head>
 <body>
@@ -29,6 +30,89 @@
 
         <div class="anatomia" id="anatomia">
             <h1 class="subtitulo">Anatomia de um Rover</h1>
+
+            <div class="cards">
+
+              <rover-card
+                image="src/assets/rovers/estrutura-card.png"
+                title="Estrutura"
+                description="É projetada para suportar uma variedade de condições extremas enquanto transporta equipamentos científicos e realiza tarefas em outros planetas ou luas. A estrutura de um rover geralmente inclui vários componentes importantes."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/chassi-card.png"
+                title="Chassi"
+                description="A estrutura principal do rover, que suporta todos os outros componentes. Ela é projetada para ser robusta e proteger os sistemas internos de impactos, radiação e condições climáticas extremas. O chassi também é projetado para suportar a carga dos instrumentos científicos e de comunicação."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/roda-card.png"
+                title="Rodas e ‎ ‎ suspensão"
+                description="A suspensão do rover é projetada para garantir que ele possa se mover de forma estável e eficiente sobre terrenos irregulares, como dunas de areia ou rochas grandes. As rodas são tipicamente feitas de materiais resistentes e têm uma forma especial para maximizar a tração."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/mobilidade-card.png"
+                title="Sistemas de mobilidade"
+                description="O sistema de mobilidade inclui os mecanismos responsáveis pelo movimento e estabilidade do rover, permitindo-lhe se deslocar, evitar obstáculos e realizar sua missão científica."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/motor-card.png"
+                title="Motores de ‎ rotação"
+                description="Usados para girar as rodas, permitindo ao rover se mover para frente, para trás, e até mesmo virar."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/suspensao-card.png"
+                title="Suspensão"
+                description="Permite que o rover tenha um movimento estável em superfícies irregulares. Muitas vezes, usa uma combinação de molas e atuadores para absorver o impacto e controlar a movimentação."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/energia-card.png"
+                title="Sistemas de energia"
+                description="É crucial para garantir que ele funcione de maneira eficiente durante suas missões, fornecendo a energia necessária para os sistemas de navegação, comunicação, instrumentos científicos, câmeras e outros componentes."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/paineis-card.png"
+                title="Painéis solares"
+                description="Muitos rovers, como o Curiosity e o Perseverance, usam painéis solares para capturar energia solar e carregar suas baterias. Essa energia é utilizada para alimentar todos os sistemas do rover, como os motores, os computadores e os instrumentos científicos."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/gerador-card.png"
+                title="Geradores termelétricos (RTGs)"
+                description="Alguns rovers, como o Curiosity, usam RTGs (Geradores Termoelétricos de Radioisótopos) para fornecer energia de forma contínua, gerada pelo decaimento radioativo de elementos como o plutônio. Esses geradores são úteis em locais com pouca luz solar."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/comunicacao-card.png"
+                title="Sistema de comunicação"
+                description="É fundamental para garantir a troca de dados entre o rover e as equipes de controle na Terra, bem como para a transmissão de informações científicas e de status do rover."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/antena-card.png"
+                title="Antenas"
+                description="Rovers têm antenas para comunicação com a Terra. Elas enviam dados sobre o ambiente e o estado do rover, e recebem comandos da equipe de controle no centro de operações."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/computador-card.png"
+                title="Computadores de bordo"
+                description="O rover possui computadores que processam os dados e executam os comandos. Esses sistemas são responsáveis por gerenciar as tarefas autônomas do rover, como navegação, coleta de dados e operação dos instrumentos."
+              ></rover-card>
+
+              <rover-card
+                image="src/assets/rovers/camera-card.png"
+                title="Sensores e ‎ câmeras"
+                description="Para realizar tarefas autônomas, como a navegação e a identificação de objetos de interesse, os rovers estão equipados com câmeras e sensores. Isso inclui câmeras de alta resolução para tirar fotos e vídeos, e sensores de proximidade para evitar colisões."
+              ></rover-card>
+
+          </div>
+
         </div>
     </div>
 
