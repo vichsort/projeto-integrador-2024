@@ -68,3 +68,15 @@ function updateDisplayTime() {
   const seconds = Math.floor(audio.currentTime % 60);
   timeDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 }
+
+
+/* loader ------ */
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader-hidden");
+  loader.addEventListener("transitionend", () => {
+      document.body.removeChild("loader")
+  })
+})
