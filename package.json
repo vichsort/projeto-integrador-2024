@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "autoprefixer": "^10.4.20",
     "lit": "^3.2.0",
     "postcss": "^8.4.47",

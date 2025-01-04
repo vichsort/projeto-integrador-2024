@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./src/index.css" />
     <script type="module" src="./src/script.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
   </head>
 
   <body>
@@ -86,7 +90,7 @@
       <div class="status">
         <h2>Status das missões</h2>
       </div>
-      <div class="subsection2">
+      <div class="subsection2" data-aos="fade-right">
         <div class="small">
           <h3 class="num">03</h3>
           <p class="txt">NAVES DA NASA EM ÓRBITA</p>
@@ -97,6 +101,7 @@
         </div>
       </div>
       <img
+        data-aos="zoom-in-left"
         src="./src/assets/sputnik-nave.png"
         alt="Sonda Sputnik ilustrativa"
         class="sputnik-img"
@@ -287,6 +292,10 @@
     </footer>
 
     <div class="loader"></div>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
  

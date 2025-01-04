@@ -40,7 +40,7 @@ nav {
     font-size: larger;
 }
 
-.items item a:hover {
+.item a:hover {
     transition: 0.1s ease;
     font-weight: bold;
 }
