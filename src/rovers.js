@@ -1,3 +1,6 @@
+
+/* Carrossel cards -------- */
+
 /* loader ------ */
 
 window.addEventListener("load", () => {
