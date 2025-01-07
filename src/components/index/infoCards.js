@@ -96,5 +96,3 @@ export class infoCards extends LitElement {
         `
     }
 }
-
-window.customElements.define('info-cards', infoCards);

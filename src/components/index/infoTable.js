@@ -63,5 +63,3 @@ export class infoTable extends LitElement {
         `
     }
 }
-
-window.customElements.define('info-table', infoTable);

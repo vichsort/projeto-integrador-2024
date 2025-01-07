@@ -50,5 +50,3 @@ export class miniCuriosity extends LitElement {
         `
     }
 }
-
-window.customElements.define('mini-curiosity', miniCuriosity);

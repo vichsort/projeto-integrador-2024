@@ -59,5 +59,3 @@ export class mars3d extends LitElement {
         `
     } 
 }
-
-window.customElements.define('mars-3d', mars3d);

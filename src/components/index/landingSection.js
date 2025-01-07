@@ -79,5 +79,3 @@ export class landingSection extends LitElement {
                     `
     }
 }
-
-window.customElements.define('landing-section', landingSection);

@@ -127,5 +127,3 @@ export class statusMissoes extends LitElement {
         `
     }
 }
-
-window.customElements.define('status-missoes', statusMissoes);
