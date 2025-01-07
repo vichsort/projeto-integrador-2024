@@ -79,28 +79,32 @@ export class conhecaMarte extends LitElement {
 
             .info-table {
                 flex: 1;
-                max-width: 70%;
+                width: 100%;
+                min-width: 600px;
+                max-width: 90%;
                 border-collapse: collapse;
                 color: white;
                 display: flex;
                 align-items: center;
-                padding-top: 8vh;
+                padding-top: 4vh;
             }
 
             .info-table td {
-                padding: 15px 10px;
-                font-size: 1.5rem;
+                padding: 20px 25px; 
+                font-size: 1.5rem; 
             }
 
             .label {
                 font-weight: bold;
                 text-align: left;
                 border-bottom: 1px solid white;
+                width: 50%;
             }
 
             .value {
                 text-align: right;
                 border-bottom: 1px solid white;
+                width: 50%;
             }
 
             .info-table tr:last-child td {

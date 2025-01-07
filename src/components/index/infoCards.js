@@ -81,13 +81,13 @@ export class infoCards extends LitElement {
                 padding: 1rem 5rem;
                 border-radius: 50px;
                 text-decoration: none;
-                padding-bottom: 0.2%;
+                padding-bottom: 10px;
                 
             }
 
             .card-btn:hover {
                 padding: 1rem 6rem;
-                padding-bottom: 0.2%;
+                padding-bottom: 10px;
                 box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
                 -webkit-box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
                 -moz-box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
@@ -105,7 +105,7 @@ export class infoCards extends LitElement {
                 border-radius: 50px;
                 text-decoration: none;
                 padding-bottom: 0.2%;
-                
+                text-weight: bolder;
             }
         `
     }

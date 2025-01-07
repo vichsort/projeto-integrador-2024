@@ -1,38 +1,39 @@
-// problema em fazer a função de rotação funcionar:
-// window.addEventListener("scroll", () => {
-//     const scrollPosition = window.scrollY;
-//     const rotationAngle = scrollPosition / 15;
-//     const image = document.querySelector(".mars");
-  
-//     image.style.transform = `rotate(${Math.min(rotationAngle, 360)}deg)`;
-// });
-
 import { LitElement, html, css } from 'lit';
 
 export class landingSection extends LitElement {
+    firstUpdated() {
+        const marsElement = this.shadowRoot.querySelector(".mars");
+
+        window.addEventListener("scroll", () => {
+            const scrollPosition = window.scrollY;
+            const rotationAngle = scrollPosition / 15; 
+            marsElement.style.transform = `rotate(${Math.min(rotationAngle, 360)}deg)`;
+        });
+    }
+
     render() {
         return html`
-        <div class="self">
-            <img src="so texto.svg" alt="Logo do site: GeoMars" class="titulo" />
+            <div class="self">
+                <img src="so texto.svg" alt="Logo do site: GeoMars" class="titulo" />
 
-            <div class="mars">
-            <img
-                src="marte home.png"
-                alt="Planeta Marte"
-                class="mars"
-            />
+                <div class="mars-container">
+                    <img
+                        src="marte home.png"
+                        alt="Planeta Marte"
+                        class="mars"
+                    />
+                </div>
             </div>
-        </div>
-        `
+        `;
     }
 
     static get styles() {
         return css`
-
             .self {
                 display: block;
                 padding: 5rem;
             }
+
             .titulo {
                 margin: 2rem auto;
                 width: 753px;
@@ -44,17 +45,20 @@ export class landingSection extends LitElement {
                 justify-content: center;
             }
 
-            .item {
-                margin-left: 1rem;
-            }
-
-            .mars {
+            .mars-container {
                 width: 800px;
                 height: 800px;
                 margin: 0 auto;
-                margin-top: -9vh;
+                margin-top: -25vh;
                 margin-bottom: -20vh;
-                transition: transform 0s ease-in-out;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .mars {
+                width: 100%;
+                height: 100%;
                 z-index: 2;
             }
 
@@ -78,6 +82,6 @@ export class landingSection extends LitElement {
                 height: 5rem;
                 animation: sobeDesce 3s ease infinite;
             }
-                    `
+        `;
     }
 }
