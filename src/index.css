@@ -62,6 +62,7 @@ nav {
     display: inline-flex;
     margin-left: auto;
     font-size: larger;
+    gap: 1rem;
 }
 
 .item a:hover {
@@ -276,17 +277,14 @@ footer {
     position: relative;
     margin: 0
 }
-
-.rover-andando-container {
-    display: block;
-    width: 100%;
-}
   
 .rover-andando {
     position: relative;
+    top: 1rem;
     width: 400px;
+    animation: andando 10s linear infinite alternate;
     height: 400px;
-    animation: andando 10s linear;
+    margin-bottom: -200px;
 }
   
 @keyframes andando {
@@ -294,7 +292,7 @@ footer {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(100% - 150px));
+      transform: translateX(calc(50vw - 150px));
     }
 }
   
