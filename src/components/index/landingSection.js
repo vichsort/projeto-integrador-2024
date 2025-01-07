@@ -40,6 +40,8 @@ export class landingSection extends LitElement {
                 position: relative;
                 z-index: 1;
                 transition: 0.3s ease;
+                display: flex;
+                justify-content: center;
             }
 
             .item {
@@ -50,7 +52,7 @@ export class landingSection extends LitElement {
                 width: 800px;
                 height: 800px;
                 margin: 0 auto;
-                margin-top: -18vh;
+                margin-top: -9vh;
                 margin-bottom: -20vh;
                 transition: transform 0s ease-in-out;
                 z-index: 2;

@@ -47,12 +47,13 @@ export class statusMissoes extends LitElement {
                 text-align: center;
                 font-size: 2.5rem;
                 letter-spacing: 0.6rem;
-                margin-bottom: 3rem;
-                margin-top: 15vh;
+                margin-top: 10%;
             }
 
             .small {
                 display: flex;
+                align-items: center;
+                margin-top: -20%
             }
 
             .num {
@@ -60,6 +61,7 @@ export class statusMissoes extends LitElement {
                 font-size: 6rem;
                 margin-right: 2rem;
                 transition: 0.1s ease-in-out;
+
             }
 
             .txt {
@@ -75,14 +77,16 @@ export class statusMissoes extends LitElement {
             .saber {
                 text-align: center;
                 font-size: 2.5rem;
-                margin-top: -40px;
+                margin-top: -20vh;
                 margin-bottom: 30px;
+                font-weight: 400;
             }
 
             .foguete-btn-container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
             }
 
             .foguete-btn {
@@ -96,13 +100,15 @@ export class statusMissoes extends LitElement {
                 padding: 1rem 5rem;
                 border-radius: 50px;
                 text-decoration: none;
-                padding-bottom: 0.2%;
+                padding-bottom: 1%;
+
             }
 
             .foguete-btn:hover {
                 font-weight: bolder;
                 padding: 1rem 6rem;
-                padding-bottom: 0.2%;
+                padding-bottom: 1%;
+                cursor: pointer;
                 box-shadow: 0px 0px 108px 6px rgba(255, 255, 255, 0.33);
                 -webkit-box-shadow: 0px 0px 108px 6px rgba(255, 255, 255, 0.33);
                 -moz-box-shadow: 0px 0px 108px 6px rgba(255, 255, 255, 0.33);
@@ -113,7 +119,9 @@ export class statusMissoes extends LitElement {
                 outline: none;
                 padding: 0;
                 margin: 0;
-                margin-left: 15px;
+                padding-left: 100px;
+                display: flex;
+                align-items: center;
             }
 
             .sputnik-img {

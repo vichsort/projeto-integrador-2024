@@ -14,7 +14,7 @@ export class infoCards extends LitElement {
                         tecnológicos avançados, como sensores, câmeras de alta resolução e
                         braços robóticos, o Curiosity fez diversas descobertas
                         significativas, como a identificação de rochas e do solo, variações
-                        no clima local e a detecção de moléculas orgãnicas.
+                        no clima local e a detecção de moléculas orgânicas.
                     </p>
                 </div>
 
@@ -82,16 +82,30 @@ export class infoCards extends LitElement {
                 border-radius: 50px;
                 text-decoration: none;
                 padding-bottom: 0.2%;
+                
             }
 
             .card-btn:hover {
-                font-weight: bolder;
                 padding: 1rem 6rem;
                 padding-bottom: 0.2%;
                 box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
                 -webkit-box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
                 -moz-box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
 
+            }
+
+            .card-btn a {
+                margin-top: 10rem;
+                justify-content: center;
+                background-color: #f25e02;
+                color: white;
+                font-size: 2rem;
+                transition: 0.3s ease;
+                padding: 1rem 5rem;
+                border-radius: 50px;
+                text-decoration: none;
+                padding-bottom: 0.2%;
+                
             }
         `
     }

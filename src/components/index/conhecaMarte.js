@@ -7,7 +7,7 @@ export class conhecaMarte extends LitElement {
             <div class="subsection">
                 <div class="minimars">
                     <model-viewer
-                        src="../../../src/assets/mars-model.glb"
+                        src="../../../src/assets/3d models/mars-model.glb"
                         alt="Modelo 3D de Marte"
                         auto-rotate
                         camera-controls
@@ -16,35 +16,34 @@ export class conhecaMarte extends LitElement {
                     </model-viewer>
                     <p>Planeta Marte em 3D</p>
                 </div>
+                <table class="info-table">
+                    <tr>
+                        <td class="label">Área:</td>
+                        <td class="value">144.400.000 km<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Força da gravidade:</td>
+                        <td class="value">3,71 m/s<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Distância da Terra:</td>
+                        <td class="value">54.600.000 km</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Distância do Sol:</td>
+                        <td class="value">227.900.000 km</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Período orbital:</td>
+                        <td class="value">687 dias</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Duração do dia:</td>
+                        <td class="value">1d 0h 37m</td>
+                    </tr>
+                </table>
             </div>
-
-            <table class="info-table">
-                <tr>
-                    <td class="label">Área:</td>
-                    <td class="value">144.400.000 km<sup>2</sup></td>
-                </tr>
-                <tr>
-                    <td class="label">Força da gravidade:</td>
-                    <td class="value">3,71 m/s<sup>2</sup></td>
-                </tr>
-                <tr>
-                    <td class="label">Distância da Terra:</td>
-                    <td class="value">54.600.000 km</td>
-                </tr>
-                <tr>
-                    <td class="label">Distância do Sol:</td>
-                    <td class="value">227.900.000 km</td>
-                </tr>
-                <tr>
-                    <td class="label">Período orbital:</td>
-                    <td class="value">687 dias</td>
-                </tr>
-                <tr>
-                    <td class="label">Duração do dia:</td>
-                    <td class="value">1d 0h 37m</td>
-                </tr>
-            </table>
-        ` 
+        `;
     }
 
     static get styles() {
@@ -56,10 +55,19 @@ export class conhecaMarte extends LitElement {
                 color: white;
             }
 
+            .subsection {
+                display: flex;
+                width: 100%;
+                gap: 5%;
+                align-items: flex-start;
+            }
+
             .minimars {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: flex-start;
+                flex: 1;
             }
 
             .mars3d {
@@ -69,26 +77,14 @@ export class conhecaMarte extends LitElement {
                 margin-bottom: 20px;
             }
 
-            .mars3d p {
-                text-align: center;
-                margin-top: 1rem;
-                position: absolute;
-            }
-
-            .subsection {
-                display: flex;
-                width: 100%;
-                gap: 5%;
-                padding: 0 8rem;
-                margin-bottom: 4rem;
-            }
-
-
             .info-table {
-                width: 100%;
-                max-width: 1200px;
-                margin: 50px auto;
+                flex: 1;
+                max-width: 70%;
                 border-collapse: collapse;
+                color: white;
+                display: flex;
+                align-items: center;
+                padding-top: 8vh;
             }
 
             .info-table td {
@@ -110,6 +106,6 @@ export class conhecaMarte extends LitElement {
             .info-table tr:last-child td {
                 border-bottom: none;
             }
-        `
+        `;
     }
 }
