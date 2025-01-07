@@ -3,10 +3,10 @@ import { LitElement, html, css } from "lit";
 export class statusMissoes extends LitElement {
     render() {
         return html`
-              <div class="status">
+              <div class="titulo">
                 <h2>Status das missões</h2>
             </div>
-            <div class="subsection2" data-aos="fade-right">
+            <div class="subsection" data-aos="fade-right">
                 <div class="small">
                 <h3 class="num">03</h3>
                 <p class="txt">NAVES DA NASA EM ÓRBITA</p>
@@ -35,7 +35,20 @@ export class statusMissoes extends LitElement {
 
     static get styles() {
         return css`
-            .subsection2 {
+
+            @media (max-width: 430px) {
+                .sputnik-img {
+                    display: none;
+                }
+
+                .subsection {
+                    display: inline-flex;
+                    padding: 0;
+
+                }
+            }
+
+            .subsection {
                 display: flex;
                 justify-content: center;
                 padding: 0 30rem;
@@ -43,7 +56,7 @@ export class statusMissoes extends LitElement {
                 margin-bottom: 8rem;
             }
 
-            .status {
+            .titulo {
                 text-align: center;
                 font-size: 2.5rem;
                 letter-spacing: 0.6rem;

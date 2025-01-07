@@ -39,6 +39,12 @@ export class infoCards extends LitElement {
 
     static get styles() {
         return css`
+            @media (max-width: 430px) {
+                .cards {
+                    width: 100%;
+                }
+            }
+
             .cards {
                 display: flex;
                 flex-wrap: wrap;
