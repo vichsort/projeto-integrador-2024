@@ -56,55 +56,8 @@ nav {
     height: 63px;
 }
 
-/* Seção 1 - Header ---------------------- */
-
-.titulo {
-    margin: 2rem auto;
-    width: 753px;
-    height: 363px;
-    position: relative;
-    z-index: 1;
-    transition: 0.3s ease;
-}
-
-.item {
-    margin-left: 1rem;
-}
-
-.mars {
-    width: 800px;
-    height: 800px;
-    margin: 0 auto;
-    margin-top: -18vh;
-    margin-bottom: -20vh;
-    transition: transform 0s ease-in-out;
-    z-index: 2;
-}
-
-@keyframes sobeDesce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-50%);
-    }
-}
-
-.seta {
-    visibility: hidden;
-    color: white;
-    margin: 2rem auto;
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    top: -300px;
-    height: 5rem;
-    animation: sobeDesce 3s ease infinite;
-}
-
+/* Seção 1 - Componentizada!  ---------------------- */
 /* Seção 2 - Componentizada! ---------------------- */
-
-
 /* Seção 3 - Componentizada! ---------------------- */
 
 /* Seção 4 - Exploracoes */
@@ -303,14 +256,13 @@ footer {
 .rover-andando-container {
     display: block;
     width: 100%;
-    bottom: 40rem;
 }
   
 .rover-andando {
     position: relative;
     width: 400px;
-    animation: andando 10s linear infinite alternate;
     height: 400px;
+    animation: andando 10s linear;
 }
   
 @keyframes andando {
@@ -318,7 +270,7 @@ footer {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(400% - 150px));
+      transform: translateX(calc(100% - 150px));
     }
 }
   
@@ -398,8 +350,6 @@ footer {
     font-size: 1.2rem;
     margin-top: 20px;
 }
-  
-
 
 /* Sectionwise ---------------------- */
 
@@ -434,6 +384,58 @@ footer {
 .section6 {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,8,57,1) 52%, rgba(0,0,0,1) 100%);   
+}
+
+@media (max-width: 430px) {
+    .section2,
+    .section3,
+    .section4,
+    .section6,
+    footer {
+        width: 224%;
+    }
+
+    .wraper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ifc {
+        margin: 0;
+    }
+
+    .adderalls {
+        bottom: -10rem;
+        position: relative;
+    }
+
+    .card-f, .newsletter {
+        display: none;
+    }
+
+    footer {
+        bottom: 0;
+        height: 70rem;
+    }
+
+    .rover-andando-container {
+        bottom: -5rem;
+        position: relative;
+    }
+
+    .rover-andando {
+        width: 200px;
+        height: 200px;
+    }
+
+    @keyframes andando {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(67% - 150px));
+        }
+    }
 }
 
 .section3,
