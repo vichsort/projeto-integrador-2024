@@ -28,11 +28,11 @@ export class landingSection extends LitElement {
 
     static get styles() {
         return css`
-
             .self {
                 display: block;
                 padding: 5rem;
             }
+
             .titulo {
                 margin: 2rem auto;
                 width: 753px;
@@ -76,6 +76,6 @@ export class landingSection extends LitElement {
                 height: 5rem;
                 animation: sobeDesce 3s ease infinite;
             }
-                    `
+        `
     }
 }
