@@ -42,9 +42,20 @@ export class statusMissoes extends LitElement {
                 }
 
                 .subsection {
-                    display: inline-flex;
-                    padding: 0;
+                    display: block !important;
+                    padding: 0 !important;
+                }
 
+                .small {
+                    justify-content: center;
+                }
+
+                .txt {
+                    font-size: 2rem !important;
+                }
+
+                .num {
+                    font-size: 8rem !important; 
                 }
             }
 
@@ -114,7 +125,7 @@ export class statusMissoes extends LitElement {
                 border-radius: 50px;
                 text-decoration: none;
                 padding-bottom: 1%;
-
+                border: none;
             }
 
             .foguete-btn:hover {

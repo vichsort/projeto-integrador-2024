@@ -22,16 +22,15 @@ html {
 
 nav {
     display: flex;
-    background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
     color: white;
-    width: 100dvw;
+    width: 100%;
     padding: 2rem 8rem;
     align-items: center;
     position: fixed;  
     top: 0;
-    left: 0;
     z-index: 1000;
+    
 }
 
 .burger {
@@ -60,6 +59,8 @@ nav {
 
 .items {
     display: inline-flex;
+    width: 20rem;
+    justify-content: space-around;
     margin-left: auto;
     font-size: larger;
     gap: 1rem;
@@ -103,112 +104,78 @@ nav {
     transition: 0.3s ease;
 }
 
-/* Seção 5 - Carrossel ----------------------
+/* Seção 7 - Sons de Marte */
+@media (max-width: 430px) {
+    .section2,
+    .section3,
+    .section4,
+    .section6,
+    .section7,
+    footer {
+        width: 267%;
+    }
 
-.out-container {
-    padding: 40px;
-    display: flex;
-    align-items: center;
+    .wraper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ifc {
+        margin: 0 !important;
+        height: 450px !important;
+    }
+
+    .adderalls {
+        bottom: -10rem;
+        position: relative;
+        font-size: 2rem !important;
+    }
+
+    .card-f, .newsletter {
+        display: none !important;
+    }
+
+    footer {
+        bottom: 0;
+        height: 100rem !important;
+    }
+
+    .rover-andando-container {
+        bottom: 8rem;
+        position: relative;
+    }
+
+    .rover-andando {
+        width: 200px;
+        height: 200px;
+    }
+
+    @keyframes andando {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(67% - 150px));
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+.section7 {
+    display: flex !important;
+    flex-direction: column;
     justify-content: center;
 }
 
-.carrossel-container {
-    position: relative;
-    overflow: hidden;
-    width: 70%;
-    max-width: 1000px; 
-    aspect-ratio: 16 / 9;
-}
-
-.carrossel {
+.titulo7 {
     display: flex;
-    transition: transform 0.5s ease;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.carrossel .item {
-    position: relative;
-    min-width: 100%;
-    text-align: center;
-    opacity: 0.5;
-    filter: grayscale(100%);
-    transition: opacity 0.5s ease, filter 0.5s ease;
-}
-
-.carrossel .item.active {
-    opacity: 1;
-    filter: grayscale(0);
-}
-
-.carrossel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.desc {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: #ffffff;
-    text-align: left;
-    max-width: 60%;
-}
-
-.desc h3 {
-    font-size: 1.5em;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.desc p {
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    color: #ffffff;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    font-size: 24px;
-    font-weight: bold;
-    outline: none;
-    z-index: 1; 
-}
-
-.prev {
-    left: -40px; 
-}
-
-.next {
-    right: -40px;
-}
-
-.prev:hover, .next:hover {
-    color: #cccccc;
-}
-
-.carrossel .item:not(.active) {
-    opacity: 0.3;
-    filter: blur(2px);
-}
-
-.carrossel .item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-}
- */
-
-/* Seção 7 - Sons de Marte */
 .audio-player {
     display: flex;
     align-items: center;
@@ -216,7 +183,7 @@ nav {
     padding: 10px;
     border-radius: 5px;
     width: 500px;
-    margin-left: 30%;
+    margin: 0 auto;
 }
   
 .play-button {
@@ -254,13 +221,12 @@ nav {
     
 }
 
-.line {
-    border-bottom: #555B8D solid 5px;
-    border-radius: 990px;
+hr {
+    border: 2px solid #555B8D;
+    border-radius: 2px;
     width: 300px;
     text-align: center;
-    margin-left: 38.5%;
-    margin-bottom: 40px;
+    margin: 10px auto;
 }
 
 /* Footer ---------------------- */
@@ -406,58 +372,6 @@ footer {
 .section6 {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,8,57,1) 52%, rgba(0,0,0,1) 100%);   
-}
-
-@media (max-width: 430px) {
-    .section2,
-    .section3,
-    .section4,
-    .section6,
-    footer {
-        width: 267%;
-    }
-
-    .wraper {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .ifc {
-        margin: 0;
-    }
-
-    .adderalls {
-        bottom: -10rem;
-        position: relative;
-    }
-
-    .card-f, .newsletter {
-        display: none;
-    }
-
-    footer {
-        bottom: 0;
-        height: 70rem;
-    }
-
-    .rover-andando-container {
-        bottom: -5rem;
-        position: relative;
-    }
-
-    .rover-andando {
-        width: 200px;
-        height: 200px;
-    }
-
-    @keyframes andando {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(calc(67% - 150px));
-        }
-    }
 }
 
 .section3,
