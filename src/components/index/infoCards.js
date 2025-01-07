@@ -40,8 +40,22 @@ export class infoCards extends LitElement {
     static get styles() {
         return css`
             @media (max-width: 430px) {
+                .cards, .card {
+                    width: 100% !important;
+                }
+
                 .cards {
-                    width: 100%;
+                    padding: 0 !important;
+                    gap: 70px !important;
+                }
+
+                .card {
+                    font-size: 2rem !important;
+                    line-height: 29px !important;
+                }
+
+                .card h2 {
+                    font-size: 2.5rem !important;
                 }
             }
 
