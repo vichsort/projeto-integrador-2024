@@ -7,7 +7,7 @@ export class mars3d extends LitElement {
             <div class="subsection">
                 <div class="minimars">
                     <model-viewer
-                        src="../../../src/assets/mars-model.glb"
+                        src="../../../src/assets/3d models/mars-model.glb" 
                         alt="Modelo 3D de Marte"
                         auto-rotate
                         camera-controls

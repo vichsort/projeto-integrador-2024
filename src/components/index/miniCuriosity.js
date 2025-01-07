@@ -7,7 +7,7 @@ export class miniCuriosity extends LitElement {
             <div class="minicuriosity">
                 <div class="curiosity3d">
                     <model-viewer
-                    src="./src/assets/curiosity-model.glb"
+                    src="./src/assets/3d models/curiosity-model.glb"
                     alt="Modelo 3D do Curiosity"
                     auto-rotate
                     camera-controls
