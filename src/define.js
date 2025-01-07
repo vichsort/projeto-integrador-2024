@@ -1,11 +1,8 @@
 import { landingSection } from "./components/exports";
 window.customElements.define('landing-section', landingSection);
 
-import { mars3d } from "./components/exports";
-window.customElements.define('mars-3d', mars3d);
-
-import { infoTable } from './components/exports';
-window.customElements.define('info-table', infoTable);
+import { conhecaMarte } from './components/exports';
+window.customElements.define('conheca-marte', conhecaMarte);
 
 import { statusMissoes } from "./components/exports";
 window.customElements.define('status-missoes', statusMissoes);

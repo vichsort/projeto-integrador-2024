@@ -22,39 +22,7 @@ export class mars3d extends LitElement {
 
     static get styles() {
         return css`
-            .subtitulo {
-                font-size: 3rem;
-                margin-left: 4rem;
-                margin-bottom: 4rem;
-                color: white;
-            }
 
-            .minimars {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .mars3d {
-                width: 500px;
-                height: 500px;
-                display: flex;
-                margin-bottom: 20px;
-            }
-
-            .mars3d p {
-                text-align: center;
-                margin-top: 1rem;
-                position: absolute;
-            }
-
-            .subsection {
-                display: flex;
-                width: 100%;
-                gap: 5%;
-                padding: 0 8rem;
-                margin-bottom: 4rem;
-            }
 
         `
     } 
