@@ -125,7 +125,7 @@ export class statusMissoes extends LitElement {
                 border-radius: 50px;
                 text-decoration: none;
                 padding-bottom: 1%;
-
+                border: none;
             }
 
             .foguete-btn:hover {

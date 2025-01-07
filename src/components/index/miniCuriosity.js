@@ -24,6 +24,12 @@ export class miniCuriosity extends LitElement {
 
     static get styles() {
         return css`
+
+            @media(max-width: 460px) {
+                p {
+                    font-size: 2rem !important;
+                }
+            }
             .minicuriosity {
                 display: flex;
                 flex-direction: column;

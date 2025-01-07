@@ -102,6 +102,7 @@ export class infoCards extends LitElement {
                 border-radius: 50px;
                 text-decoration: none;
                 padding-bottom: 10px;
+                border: none;
                 
             }
 
