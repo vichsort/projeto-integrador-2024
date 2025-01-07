@@ -1,10 +1,10 @@
-window.addEventListener("scroll", () => {
-  const scrollPosition = window.scrollY;
-  const rotationAngle = scrollPosition / 15;
-  const image = document.querySelector(".mars");
+// window.addEventListener("scroll", () => {
+//   const scrollPosition = window.scrollY;
+//   const rotationAngle = scrollPosition / 15;
+//   const image = document.querySelector(".mars");
 
-  image.style.transform = `rotate(${Math.min(rotationAngle, 360)}deg)`;
-});
+//   image.style.transform = `rotate(${Math.min(rotationAngle, 360)}deg)`;
+// });
 // Player - Seção 7
 
 const audio = document.getElementById('audio');

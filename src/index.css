@@ -34,6 +34,30 @@ nav {
     z-index: 1000;
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 430px) {
+    nav {
+        width: 100%;
+        height: 9rem;
+        padding: 2rem;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .item {
+        display: none;
+    }
+}
+
 .items {
     display: inline-flex;
     margin-left: auto;
@@ -392,7 +416,7 @@ footer {
     .section4,
     .section6,
     footer {
-        width: 224%;
+        width: 267%;
     }
 
     .wraper {
