@@ -49,7 +49,27 @@ export class conhecaMarte extends LitElement {
     static get styles() {
         return css`
 
-            @media(max-width: 430px) {
+            @media(max-width: 430px ) {
+                .subsection {
+                    flex-direction: column-reverse;
+                    align-items: center !important;
+                }
+
+                .info-table {
+                    width: 100%;
+                    display: inline-table !important;
+                }
+
+                .info-table td {
+                    font-size: 2rem !important;
+                }
+
+                .minimars p {
+                    font-size: 2rem !important;
+                }
+            }
+
+            @media (max-width: 1024px) {
                 .subsection {
                     flex-direction: column-reverse;
                     align-items: center !important;

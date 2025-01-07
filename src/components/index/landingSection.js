@@ -29,6 +29,25 @@ export class landingSection extends LitElement {
 
     static get styles() {
         return css`
+
+            @media (max-width: 1024px) and (min-width: 440px) {
+                .self {
+                    min-height: 100dvh;
+                    display: flex !important;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .mars-container {
+                    margin: 0 !important;
+                }
+
+                .titulo {
+                    margin: 0 !important;
+                    position: relative;
+                    bottom: -10rem;
+                }
+            }
             .self {
                 display: block;
                 padding: 5rem;

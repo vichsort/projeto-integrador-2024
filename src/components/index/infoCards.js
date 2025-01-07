@@ -126,7 +126,6 @@ export class infoCards extends LitElement {
                 border-radius: 50px;
                 text-decoration: none;
                 padding-bottom: 0.2%;
-                text-weight: bolder;
             }
         `
     }
