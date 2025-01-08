@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="./src/define.js"></script>
-
+    <script src="/src/carousel.js"></script>
 
   </head>
 
@@ -25,7 +25,7 @@
         <div class="item">|</div>
         <div class="item"><a href="/rovers.html">Rovers</a></div>
       </div>
-      <a href="#popup1" class="burger"><img src="burger.svg" alt="menu hamburguer"></a>
+      <a href="#popup1" class="burger"><img src="/public/hamburger.png" alt="menu hamburguer"></a>
     </nav>
 
     <!-- Seção 1 - Header-->
@@ -47,6 +47,11 @@
       <info-cards></info-cards>
     </div>
 
+    <div class="carrossel">
+
+      <carrossel></carrossel>
+
+    </div>
     <!-- Seção 4 - Carrossel 1 explorações-->
     <!-- <div class="section4" id="exploracoes">
       <h2 class="subtitulo">EXPLORAÇÕES ESPACIAIS</h2>
@@ -57,29 +62,7 @@
       />
     </div> -->
 
-    <!-- Seção 7- Sons de marte-->
-    <div class="section7">
-      <div class="titulo7">
-        <h1 class="sons-title">Sons de Marte</h1>
-        <hr>
-      </div>
-
-      <div class="audio-player">
-        <button class="play-button" onclick="togglePlay()">
-          <img src="./src/assets/play-btn.png" alt="" srcset="" />
-        </button>
-        <input
-          type="range"
-          class="progress-bar"
-          value="0"
-          max="100"
-          onchange="seekAudio(event)"
-        />
-        <span class="time">00:00</span>
-      </div>
-
-      <audio id="audio" src=""></audio>
-    </div>
+   
 
     <!-- Seção 8 - Footer -->
     <footer>

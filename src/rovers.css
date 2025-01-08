@@ -113,9 +113,12 @@ nav {
     display: flex;
     justify-content: center;
     gap: 3%;
+    flex-wrap: wrap;
 }
 
-/* Carrossel -------------------------- */
+rover-card {
+    margin-top: 5vh;
+}
 
 /* Footer ---------------------- */
 

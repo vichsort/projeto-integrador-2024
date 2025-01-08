@@ -79,6 +79,7 @@ export class landingSection extends LitElement {
                 width: 100%;
                 height: 100%;
                 z-index: 200;
+                margin-top: 20vh;
             }
 
             @keyframes sobeDesce {
