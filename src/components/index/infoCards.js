@@ -89,6 +89,7 @@ export class infoCards extends LitElement {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
             }
 
             .card-btn {
@@ -126,6 +127,7 @@ export class infoCards extends LitElement {
                 border-radius: 50px;
                 text-decoration: none;
                 padding-bottom: 0.2%;
+    
             }
         `
     }

@@ -78,7 +78,7 @@ export class landingSection extends LitElement {
             .mars {
                 width: 100%;
                 height: 100%;
-                z-index: 2;
+                z-index: 200;
             }
 
             @keyframes sobeDesce {

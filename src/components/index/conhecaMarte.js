@@ -127,7 +127,7 @@ export class conhecaMarte extends LitElement {
             }
 
             .info-table td {
-                padding: 20px 25px; 
+                padding: 20px 35px; 
                 font-size: 1.5rem; 
             }
 

@@ -59,7 +59,6 @@ nav {
 
 .items {
     display: inline-flex;
-    width: 20rem;
     justify-content: space-around;
     margin-left: auto;
     font-size: larger;
