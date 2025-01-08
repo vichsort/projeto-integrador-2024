@@ -59,7 +59,7 @@ export class landingSection extends LitElement {
                 width: 753px;
                 height: 363px;
                 position: relative;
-                z-index: 50;
+                z-index: 500;
                 transition: 0.3s ease;
                 display: flex;
                 justify-content: center;

@@ -12,3 +12,6 @@ window.customElements.define('mini-curiosity', miniCuriosity);
 
 import { infoCards } from "./components/exports";
 window.customElements.define('info-cards', infoCards);
+
+import { footerComponent } from "./components/exports";
+window.customElements.define('footer-component', footerComponent);
