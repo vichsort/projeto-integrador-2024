@@ -48,6 +48,7 @@ export class landingSection extends LitElement {
                     bottom: -10rem;
                 }
             }
+            
             .self {
                 display: block;
                 padding: 5rem;

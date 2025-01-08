@@ -36,7 +36,7 @@ export class statusMissoes extends LitElement {
     static get styles() {
         return css`
 
-            @media (max-width: 430px) {
+            @media (max-width: 1024px) {
                 .sputnik-img {
                     display: none;
                 }

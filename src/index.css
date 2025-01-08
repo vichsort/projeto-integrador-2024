@@ -160,7 +160,9 @@ nav {
 }
 
 @media (max-width: 1024px) {
-    
+    footer {
+        height: 100rem !important;
+    }
 }
 
 .section7 {

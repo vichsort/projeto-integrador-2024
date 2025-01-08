@@ -39,7 +39,7 @@ export class infoCards extends LitElement {
 
     static get styles() {
         return css`
-            @media (max-width: 430px) {
+            @media (max-width: 1024px) {
                 .cards, .card {
                     width: 100% !important;
                 }
