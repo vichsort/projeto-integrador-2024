@@ -29,6 +29,18 @@ class NewsItem extends LitElement {
       border-radius: 20px;
     }
 
+    @media (max-width: 1024px) {
+      .container {
+        flex-direction: column !important;
+      }
+
+      .image {
+        max-width: none !important;
+        width: 100% !important;
+        margin-bottom: 2rem;
+      }
+    }
+
     .container:hover {
       background: #1a1a1a;
     }

@@ -6,3 +6,4 @@ export { conhecaMarte } from './index/conhecaMarte';
 export { statusMissoes } from "./index/statusMissoes";
 export { miniCuriosity } from "./index/miniCuriosity";
 export { infoCards } from "./index/infoCards";
+export { footerComponent } from './footer';

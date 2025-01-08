@@ -25,7 +25,7 @@ export class miniCuriosity extends LitElement {
     static get styles() {
         return css`
 
-            @media(max-width: 460px) {
+            @media(max-width: 1024px) {
                 p {
                     font-size: 2rem !important;
                 }
