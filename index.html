@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="./src/define.js"></script>
-    <script src="/src/carousel.js"></script>
+    <script type="module" src="./src/components/index/slider.js"></script>
 
   </head>
 
@@ -25,7 +25,7 @@
         <div class="item">|</div>
         <div class="item"><a href="/rovers.html">Rovers</a></div>
       </div>
-      <a href="#popup1" class="burger"><img src="/public/hamburger.png" alt="menu hamburguer"></a>
+      <a href="#popup1" class="burger"><img src="/hamburger.png" alt="menu hamburguer"></a>
     </nav>
     
 
@@ -44,13 +44,18 @@
 
     <!-- Seção 3 - Rovers -->
     <div class="section3" id="rovers">
-      <mini-curiosity></mini-curiosity>
-      <info-cards></info-cards>
+      <div data-aos="zoom-in-up">
+        <mini-curiosity></mini-curiosity>
+      </div>
+      <div data-aos="zoom-in-up">
+        <info-cards></info-cards>
+      </div>
     </div>
 
-    <div class="carrossel">
+    <div class="section4">
 
-      <carrossel></carrossel>
+      <h1 class="subtitulo">EXPLORAÇÕES ESPACIAIS</h1>
+      <timeline-slider></timeline-slider>
 
     </div>
     <!-- Seção 4 - Carrossel 1 explorações-->

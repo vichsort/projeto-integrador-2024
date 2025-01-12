@@ -30,6 +30,14 @@ export class miniCuriosity extends LitElement {
                     font-size: 2rem !important;
                 }
             }
+
+            .subtitulo {
+                font-size: 3rem;
+                margin-left: 4rem;
+                margin-bottom: 4rem;
+                color: white;
+            }
+                
             .minicuriosity {
                 display: flex;
                 flex-direction: column;
