@@ -77,7 +77,6 @@ class TimelineSlider extends LitElement {
             position: absolute;
             bottom: 10px;
             width: 100%;
-            background-color: #000;
             border-radius: 3px;
             padding-top: 3vh;
         }

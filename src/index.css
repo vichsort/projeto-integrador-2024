@@ -102,6 +102,17 @@ nav {
     height: 100%;
 }
 
+/* Seção 6 ------------------------------------ */
+
+.quiz-title {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+    margin-top: 10%;
+
+}
+
 
 /* Seção 7 - Sons de Marte */
 @media (max-width: 430px) {

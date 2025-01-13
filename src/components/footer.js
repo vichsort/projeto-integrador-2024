@@ -1,53 +1,9 @@
+
 import { LitElement, html, css } from "lit";
 
 export class footerComponent extends LitElement {
-    render() {
-        return html`
-            <footer>
-                <div class="rover-andando-container">
-                    <img
-                    src="./src/assets/moving-rover.png"
-                    alt="Rover percorrendo o solo marciano"
-                    class="rover-andando"
-                    />
-                </div>
-
-                <div class="newsletter">
-                    <p>Assine nossa Newsletter</p>
-                    <input placeholder="E-mail" type="email" />
-                    <button>Assinar</button>
-                </div>
-
-                <div class="wraper">
-                    <img
-                    src="../../../src/assets/logo-ifc.png"
-                    alt="Logo do IFC Campus Concórdia"
-                    class="ifc"
-                    />
-
-                    <div class="card-f">
-                        <div class="title"><a href="#conhecaMarte">Conheça Marte</a></div>
-                        <p>Status das Missões<br />Mais Informações</p>
-                    </div>
-                    <div class="card-f">
-                        <div class="title"><a href="/rovers.html">Rovers</a></div>
-                        <p>Modelo interativo<br />Curiosity e Perseverance</p>
-                    </div>
-                    <div class="card-f">
-                        <div class="title"><a href="#">Explorações Espaciais</a></div>
-                        <p>Linha do tempo<br />Galeria de fotos<br />Sons de Marte</p>
-                    </div>
-                </div>
-
-                <p class="adderalls">GeoMars© - IFC Campus Concórdia</p>
-            </footer>
-        `
-    }
-
-    static get styles() {
-        return css`
-
-            @media (max-width: 430px) {
+    static styles = css`
+    @media (max-width: 430px) {
                 footer {
                     width: 267%;
                 }
@@ -141,6 +97,11 @@ export class footerComponent extends LitElement {
                 margin-top: 200px;
                 margin-bottom: 20px;
                 font-size: 2rem;
+                flex-direction: row;
+            }
+
+            form {
+                display: flex;
             }
             
             .newsletter p {
@@ -159,6 +120,7 @@ export class footerComponent extends LitElement {
                 background-color: rgba(0, 0, 0, 0.523);
                 outline: #ff5b2e41 solid 1px;
                 font-size: 1.8rem;
+                color: white;
             }
             
             .newsletter button {
@@ -175,6 +137,7 @@ export class footerComponent extends LitElement {
                 -webkit-box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
                 -moz-box-shadow: 0px 0px 90px 6px rgba(255, 255, 255, 0.22);
                 transition: 0.1s ease;
+                
             }
 
             .newsletter button:hover {
@@ -220,6 +183,80 @@ export class footerComponent extends LitElement {
                 color: white;
                 text-decoration: none;
             }
-        `
+  `;
+
+    handleSubmit(event) {
+        event.preventDefault();
+        const email = this.shadowRoot.querySelector("input[name='email']").value;
+
+        fetch("http://localhost/save_email.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email }),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.success) {
+                    alert("Email cadastrado com sucesso!");
+                } else {
+                    alert(data.error || "Erro ao cadastrar o email.");
+                }
+            })
+            .catch((error) => {
+                console.error("Erro:", error);
+                alert("Erro ao conectar ao servidor.");
+            });
+    }
+
+    render() {
+        return html`
+      <footer>
+
+        <div class="rover-andando-container">
+            <img
+                src="./src/assets/moving-rover.png"
+                alt="Rover percorrendo o solo marciano"
+                class="rover-andando"
+            />
+        </div>
+        <div class="newsletter">
+          <p>Assine nossa Newsletter</p>
+          <form @submit="${this.handleSubmit}">
+            <input
+              placeholder="E-mail"
+              type="email"
+              name="email"
+              required
+            />
+            <button type="submit">Assinar</button>
+          </form>
+        </div>
+
+        <div class="wraper">
+            <img
+                src="../../../src/assets/logo-ifc.png"
+                alt="Logo do IFC Campus Concórdia"
+                class="ifc"
+            />
+
+            <div class="card-f">
+                <div class="title"><a href="#conhecaMarte">Conheça Marte</a></div>
+                <p>Status das Missões<br />Mais Informações</p>
+            </div>
+            <div class="card-f">
+                <div class="title"><a href="/rovers.html">Rovers</a></div>
+                <p>Modelo interativo<br />Curiosity e Perseverance</p>
+            </div>
+            <div class="card-f">
+                <div class="title"><a href="#">Explorações Espaciais</a></div>
+                <p>Linha do tempo<br />Galeria de fotos<br />Sons de Marte</p>
+            </div>
+            </div>
+
+            <p class="adderalls">GeoMars© - IFC Campus Concórdia</p>
+      </footer>
+    `;
     }
 }
+
+customElements.define("footer-component", footerComponent);
