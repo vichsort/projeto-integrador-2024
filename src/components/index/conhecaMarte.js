@@ -3,45 +3,47 @@ import { html, css, LitElement } from 'lit';
 export class conhecaMarte extends LitElement {
     render() {
         return html`
-            <h2 class="subtitulo">CONHEÇA MARTE</h2>
-            <div class="subsection">
-                <div class="minimars">
-                    <model-viewer
-                        src="../../../src/assets/3d models/mars-model.glb"
-                        alt="Modelo 3D de Marte"
-                        auto-rotate
-                        camera-controls
-                        class="mars3d"
-                    >
-                    </model-viewer>
-                    <p>Planeta Marte em 3D</p>
+            <div class="self">
+                <h2 class="subtitulo">CONHEÇA MARTE</h2>
+                <div class="subsection">
+                    <div class="minimars">
+                        <model-viewer
+                            src="../../../src/assets/3d models/mars-model.glb"
+                            alt="Modelo 3D de Marte"
+                            auto-rotate
+                            camera-controls
+                            class="mars3d"
+                        >
+                        </model-viewer>
+                        <p>Planeta Marte em 3D</p>
+                    </div>
+                    <table class="info-table">
+                        <tr>
+                            <td class="label">Área:</td>
+                            <td class="value">144.400.000 km<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Força da gravidade:</td>
+                            <td class="value">3,71 m/s<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Distância da Terra:</td>
+                            <td class="value">54.600.000 km</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Distância do Sol:</td>
+                            <td class="value">227.900.000 km</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Período orbital:</td>
+                            <td class="value">687 dias</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Duração do dia:</td>
+                            <td class="value">1d 0h 37m</td>
+                        </tr>
+                    </table>
                 </div>
-                <table class="info-table">
-                    <tr>
-                        <td class="label">Área:</td>
-                        <td class="value">144.400.000 km<sup>2</sup></td>
-                    </tr>
-                    <tr>
-                        <td class="label">Força da gravidade:</td>
-                        <td class="value">3,71 m/s<sup>2</sup></td>
-                    </tr>
-                    <tr>
-                        <td class="label">Distância da Terra:</td>
-                        <td class="value">54.600.000 km</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Distância do Sol:</td>
-                        <td class="value">227.900.000 km</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Período orbital:</td>
-                        <td class="value">687 dias</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Duração do dia:</td>
-                        <td class="value">1d 0h 37m</td>
-                    </tr>
-                </table>
             </div>
         `;
     }
@@ -49,10 +51,21 @@ export class conhecaMarte extends LitElement {
     static get styles() {
         return css`
 
-            @media(max-width: 430px ) {
+            @media (max-width: 430px) {
+                
+                .self {
+                    width: 100dvw;
+                }
+
                 .subsection {
                     flex-direction: column-reverse;
                     align-items: center !important;
+                }
+
+                .subtitulo {
+                    font-size: 1.5rem !important;
+                    margin-left: 0 !important;
+                    text-align: center;
                 }
 
                 .info-table {
@@ -61,15 +74,22 @@ export class conhecaMarte extends LitElement {
                 }
 
                 .info-table td {
-                    font-size: 2rem !important;
+                    font-size: 1rem !important;
+                    padding: 10px 15px !important;
+                    font-weight: normal !important;
                 }
 
                 .minimars p {
-                    font-size: 2rem !important;
+                    font-size: 1rem !important;
+                    flex-direction: unset !important; 
+                }
+
+                .mars3d {
+                    height: 300px !important;
                 }
             }
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1024px) and (min-width: 440px) {
                 .subsection {
                     flex-direction: column-reverse;
                     align-items: center !important;

@@ -48,6 +48,28 @@ export class landingSection extends LitElement {
                     bottom: -10rem;
                 }
             }
+
+            @media (max-width: 440px) {
+
+                .self {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    height: 70dvh; 
+
+                }
+
+                .titulo {
+                    width: 386.5px !important
+                }
+
+                .mars-container {
+                    width: 400px !important;
+                    height: 400px !important;
+                    
+                }
+            }
             
             .self {
                 display: block;
