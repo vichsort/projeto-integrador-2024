@@ -119,7 +119,7 @@ export class footerComponent extends LitElement {
                 border-radius: 16px;
                 background-color: rgba(0, 0, 0, 0.523);
                 outline: #ff5b2e41 solid 1px;
-                font-size: 1.8rem;
+                font-size: 1.2rem;
                 color: white;
             }
             
