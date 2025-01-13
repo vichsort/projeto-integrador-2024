@@ -25,9 +25,28 @@ export class miniCuriosity extends LitElement {
     static get styles() {
         return css`
 
-            @media(max-width: 1024px) {
+            @media (max-width: 1024px) and (min-width: 440px) {
                 p {
                     font-size: 2rem !important;
+                }
+            }
+
+            @media (max-width: 430px) {
+                p {
+                    font-size: 1rem !important;
+                }
+
+                .subtitulo {
+                    font-size: 2rem !important;
+                }
+
+                .curiosity3d {
+                    width: 600px !important;
+                    height: 300px !important;
+                }
+
+                .curiosity3d model-viewer {
+                    width: 600px !important;
                 }
             }
 

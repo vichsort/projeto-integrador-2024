@@ -39,7 +39,7 @@ export class infoCards extends LitElement {
 
     static get styles() {
         return css`
-            @media (max-width: 1024px) {
+            @media (max-width: 1024px) and (min-width: 440px) {
                 .cards, .card {
                     width: 100% !important;
                 }
@@ -56,6 +56,16 @@ export class infoCards extends LitElement {
 
                 .card h2 {
                     font-size: 2.5rem !important;
+                }
+            }
+
+            @media (max-width: 430px) {
+                .card {
+                    font-size: 1rem !important;
+                }
+
+                .card h2 {
+                    font-size: 1.3rem !important;
                 }
             }
 
@@ -89,7 +99,6 @@ export class infoCards extends LitElement {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
             }
 
             .card-btn {

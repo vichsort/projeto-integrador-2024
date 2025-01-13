@@ -22,21 +22,24 @@ export class statusMissoes extends LitElement {
                 alt="Sonda Sputnik ilustrativa"
                 class="sputnik-img"
             />
-
-            <h3 class="saber">Quer saber o que está acontecendo por lá?</h3>
-            <div class="foguete-btn-container">
-                <a href="news.html"><button class="foguete-btn">
-                SAIBA MAIS
-                <img src="/src/assets/rocket 1.svg" alt="Imagem de uma nave"/>
-                </button></a>
+            
+            <div class="bottom">
+                <h3 class="saber">Quer saber o que está acontecendo por lá?</h3>
+                <div class="foguete-btn-container">
+                    <a href="news.html"><button class="foguete-btn">
+                    SAIBA MAIS
+                    <img src="/src/assets/rocket 1.svg" alt="Imagem de uma nave"/>
+                    </button></a>
+                </div>
             </div>
+
         `
     }
 
     static get styles() {
         return css`
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1024px) and (min-width: 440px) {
                 .sputnik-img {
                     display: none;
                 }
@@ -44,6 +47,7 @@ export class statusMissoes extends LitElement {
                 .subsection {
                     display: block !important;
                     padding: 0 !important;
+                    margin: 10rem 0 !important;
                 }
 
                 .small {
@@ -56,6 +60,40 @@ export class statusMissoes extends LitElement {
 
                 .num {
                     font-size: 8rem !important; 
+                }
+            }
+
+            @media (max-width: 430px) {
+                .sputnik-img {
+                    display: none;
+                }
+
+                .subsection {
+                    display: block !important;
+                    padding: 0 !important;
+                    position: relative;
+                    bottom: -3rem;
+                }
+
+                .titulo {
+                    font-size: 2rem !important;
+                }
+
+                .small {
+                    justify-content: center;
+                }
+
+                .txt {
+                    font-size: 1.5rem !important;
+                }
+
+                .num {
+                    font-size: 4rem !important; 
+                }
+                
+                .bottom {
+                    position: relative;
+                    bottom: -6rem;
                 }
             }
 
