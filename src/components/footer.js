@@ -53,10 +53,37 @@ export class footerComponent extends LitElement {
                 }
             }
 
-            @media (max-width: 1024px) {
+            @media (max-width: 1024px) and (min-width: 440px) {
                 footer {
                     height: 100rem !important;
                 }
+            }
+
+            @media (max-width: 430px) {
+                footer {
+                    height: 80rem !important;
+                    width: 100dvw !important;
+                    padding: 0 !important;
+                }
+
+                .rover-andando {
+                    height: 250px !important;
+                    width: 250px !important;
+                    top: 5rem !important;
+                }
+
+                .ifc {
+                    height: 250px !important;
+                    position: relative;
+                    top: 18rem;
+                }
+
+                .adderalls {
+                    font-size: 0.8rem !important;
+                    position: relative;
+                    top: 20rem;
+                }
+
             }
 
             footer {

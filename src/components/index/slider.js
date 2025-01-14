@@ -3,6 +3,21 @@ import { LitElement, html, css } from 'lit';
 
 class TimelineSlider extends LitElement {
     static styles = css`
+
+        @media (max-width: 430px) {
+            .slide h2 {
+                font-size: 2rem !important;
+            }
+
+            .slide h3 {
+                font-size: 1.5rem !important;
+            }
+
+            .slide p {
+                font-size: 1rem !important;
+            }
+        }
+
         :host {
             display: block;
             color: #fff;

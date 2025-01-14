@@ -32,7 +32,7 @@ export class infoCards extends LitElement {
                 </div>
             </div>
             <div class="card-btn-container">
-                <button class="card-btn"><a href="rovers.html">CONHEÇA MAIS</a></button>
+                <a href="rovers.html" class="card-btn">CONHEÇA MAIS</a>
             </div>
         `
     }
@@ -60,12 +60,25 @@ export class infoCards extends LitElement {
             }
 
             @media (max-width: 430px) {
+
+                .cards {
+                    padding: 0 !important;
+                    gap: 0 !important;
+                }
+
                 .card {
                     font-size: 1rem !important;
+                    width: 80% !important;
                 }
 
                 .card h2 {
                     font-size: 1.3rem !important;
+                }
+
+                .card-btn {
+                    padding: 0.5rem 5rem !important;
+                    font-size: 1rem !important;
+                    margin-top: 0 !important;
                 }
             }
 

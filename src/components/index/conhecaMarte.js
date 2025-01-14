@@ -71,6 +71,7 @@ export class conhecaMarte extends LitElement {
                 .info-table {
                     width: 100%;
                     display: inline-table !important;
+                    min-width: 0 !important;
                 }
 
                 .info-table td {

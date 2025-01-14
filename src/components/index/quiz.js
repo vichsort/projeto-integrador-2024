@@ -9,6 +9,19 @@ class QuizComponent extends LitElement {
   };
 
   static styles = css`
+
+    @media (max-width: 430px) {
+
+      :host {
+        width: 100dvw !important;
+      }
+
+      .answers {
+        flex-direction: column !important;
+        font-size: 1rem !important;
+      }
+    }
+
     :host {
       display: block;
       text-align: center;
